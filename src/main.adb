@@ -7,11 +7,17 @@ with mostrarArray; use mostrarArray;
 
 procedure Main is
 
+
+   ---------TIPOS------------
+
+   --------------------------
+
    function menu return Boolean is
 
 
       eleccion : Natural range 0..7;
    begin
+
       Put_Line("----------- MENU OPCIONES -----------");
       Put_Line("1: Calentar");
       Put_Line("2: Mostrar temperatura actual");
@@ -22,11 +28,30 @@ procedure Main is
       Put_Line("7: Función extra");--FALTA POR DEFINIR ---
       Put_Line("0: Salir");
 
+      Put("   Pulsa el número de la opción: ");
       get(eleccion);
+      New_Line;
 
-      ---parte de elección incorrecta----
-      -----------------------------------
-
+      case eleccion is
+         when 0=>
+            Put_Line("Opción: Salir");
+         when 1=>
+            Put_Line("Opción: Calentar");
+         when 2=>
+            Put_Line("Opción: Mostrar temperatura actual");
+         when 3=>
+            Put_Line("Opción: Leer temperatura y guardar en array");
+         when 4=>
+            Put_Line("Opción: Mostrar temperaturas del array");
+         when 5=>
+            Put_Line("Opción: Calcular y mostrar temperatura media");
+         when 6=>
+            Put_Line("Opción: Calcular y mostrar porcentaje temperaturas > umbral");
+         when 7=>
+            Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
+         when others =>
+            Put_Line("No es una opción válida.");
+      end case;
 
 
       if eleccion = 0 then
@@ -34,9 +59,6 @@ procedure Main is
       else
          return False;
       end if;
-
-
-
 
 
    end menu;
