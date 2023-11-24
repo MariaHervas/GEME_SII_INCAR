@@ -8,8 +8,14 @@ with Ada.Numerics.Float_Random; use Ada.Numerics.Float_Random;
 with Tipos_nuevos; use Tipos_nuevos;
 with Calc_temp_media; use Calc_temp_media;
 with porc_temp_umbral; use porc_temp_umbral;
+<<<<<<< HEAD
+with rellenarArrayTemp; use rellenarArrayTemp;
+with utilidades; use utilidades;
+--with mostrarArray; use mostrarArray;
+=======
 with gestionArrayTemp; use gestionArrayTemp;
 
+>>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
 --------------------------------------------------------------
 --------------------------------------------------------------
 --------------------------------------------------------------
@@ -47,8 +53,8 @@ procedure Main is
       consigna_T_wat : T_wat;                                --que es la señal que se le mandará al GEME
       consigna_T_volt : T_volt;
    begin
-      Put("Introduzca los watios de consigna (50..350):");
-      Get(consigna_T_wat);
+      Put("Introduzca los watios de consigna (50..350):");   --Buena idea crear una escepción que si no se introduce un valor
+      Get(consigna_T_wat);                                   --correcto vuelva a preguntar?
       New_Line;
       consigna_T_volt := consigna_T_wat/80.0;
 
@@ -59,8 +65,9 @@ procedure Main is
 
 
 
-   function menu return Boolean is
 
+<<<<<<< HEAD
+=======
 
       eleccion : Natural range 0..7;
       temperatura_actual : T_temp;
@@ -126,20 +133,53 @@ procedure Main is
 
 
    end menu;
+>>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
    ------------------------------------------
 
 
 
+<<<<<<< HEAD
    terminar : Boolean;
+=======
+   lenArray : Integer := 0;
+   temperatura_actual : T_temp;
+   opcion : Character;
+>>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
 
 begin
 
    loop
-      terminar := menu;
-      if terminar = True then
+      opcion := menu;
+
+      case opcion is
+      when '0'=>
+         Put_Line("Opción: Salir");
          exit;
-      end if;
+      when '1'=>
+         Put_Line("Opción: Calentar");
+         calentar;
+      when '2'=>
+         Put_Line("Opción: Mostrar temperatura actual");
+         temperatura_actual := leer_temperatura;
+         Put("La temperatura actual es: ");
+         Put(item=>temperatura_actual, Fore => 2, Aft => 2, Exp => 0);
+         Put(" grados"); New_Line; New_Line;
+      when '3'=>
+         Put_Line("Opción: Leer temperatura y guardar en array");
+         --rellenarArray(valorTemp, arrayTemp, lenArray);
+      when '4'=>
+         Put_Line("Opción: Mostrar temperaturas del array");
+         --mostrarArray();
+      when '5'=>
+         Put_Line("Opción: Calcular y mostrar temperatura media");
+      when '6'=>
+         Put_Line("Opción: Calcular y mostrar porcentaje temperaturas > umbral");
+      when '7'=>
+         Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
+      when 'f' =>
+         Put_Line("No es una opción válida");
+      when others =>
+         null;
+      end case;
    end loop;
-
-
 end Main;
