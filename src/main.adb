@@ -13,10 +13,7 @@ procedure Main is
    end menu;
 
 
-
    terminar : Boolean;
-
-   procedure prueba
 
 
 begin

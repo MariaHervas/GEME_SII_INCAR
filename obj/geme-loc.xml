@@ -1,9 +1,30 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project >
-    <file_marker current="true" column=" 1" line=" 1" >
+  <Project>
+    <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 14" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 3" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\rellenararraytemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 3" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\rellenararraytemp.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\rellenararraytemp.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>
