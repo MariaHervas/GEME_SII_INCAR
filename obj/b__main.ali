@@ -18,12 +18,12 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV NO_OBSOLESCENT_FEATURES
 
-U ada_main%b		b__main.adb		a1fc957d OO PK IL
+U ada_main%b		b__main.adb		ff91fda6 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 Z system%s		system.ads		system.ali
 
-U ada_main%s		b__main.ads		47d927a8 EE NE OO PK IL
+U ada_main%s		b__main.ads		08775533 EE NE OO PK IL
 W system%s		system.ads		system.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
@@ -31,8 +31,8 @@ W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D b__main.ads		20231201152726 b44b0b3c ada_main%s
-D b__main.adb		20231201152726 81d8ae55 ada_main%b
+D b__main.ads		20231124133012 fbe579a7 ada_main%s
+D b__main.adb		20231124133012 901bb415 ada_main%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
@@ -293,8 +293,8 @@ X 5 b__main.adb
 34i4 E167{short_integer} 34m46 34r46 218m7 218r15
 35i4 E094{short_integer} 35m46 35r46 50m7 50r15 221m7 221r15
 36i4 E165{short_integer} 36m46 36r46 223m7 223r15
-37i4 E176{short_integer} 37m46 37r46 224m7 224r15
-38i4 E179{short_integer} 38m46 38r46 226m7 226r15
+37i4 E179{short_integer} 37m46 37r46 224m7 224r15
+38i4 E176{short_integer} 38m46 38r46 225m7 225r15
 39i4 E181{short_integer} 39m46 39r46 227m7 227r15
 41a4 Sec_Default_Sized_Stacks(8|45R9) 159m32 159r32
 43a4 Local_Priority_Specific_Dispatching{string} 147r9

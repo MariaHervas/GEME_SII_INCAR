@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#5d0379b6#;
+   u00001 : constant Version_32 := 16#e9264e6d#;
    pragma Export (C, u00001, "testpackrellenararrayB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -356,9 +356,9 @@ package ada_main is
    pragma Export (C, u00157, "system__val_llliS");
    u00158 : constant Version_32 := 16#f82486d6#;
    pragma Export (C, u00158, "system__val_llluS");
-   u00159 : constant Version_32 := 16#71c80e31#;
+   u00159 : constant Version_32 := 16#88877afd#;
    pragma Export (C, u00159, "gestionarraytempB");
-   u00160 : constant Version_32 := 16#e0e4b8c9#;
+   u00160 : constant Version_32 := 16#d8f4820d#;
    pragma Export (C, u00160, "gestionarraytempS");
    u00161 : constant Version_32 := 16#eca5ecae#;
    pragma Export (C, u00161, "system__memoryB");

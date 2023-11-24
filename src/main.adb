@@ -8,8 +8,8 @@ with Ada.Numerics.Float_Random; use Ada.Numerics.Float_Random;
 with Tipos_nuevos; use Tipos_nuevos;
 with Calc_temp_media; use Calc_temp_media;
 with porc_temp_umbral; use porc_temp_umbral;
-with rellenarArrayTemp; use rellenarArrayTemp;
---with mostrarArray; use mostrarArray;
+with gestionArrayTemp; use gestionArrayTemp;
+
 --------------------------------------------------------------
 --------------------------------------------------------------
 --------------------------------------------------------------
@@ -94,10 +94,10 @@ procedure Main is
             Put(" grados"); New_Line; New_Line;
          when 3=>
             Put_Line("Opción: Leer temperatura y guardar en array");
-            --rellenarArray(valorTemp, arrayTemp, lenArray);
+            rellenarArray(valorTemp, arrayTemp, lenArray);
          when 4=>
             Put_Line("Opción: Mostrar temperaturas del array");
-            --mostrarArray();
+            mostrarArray(arrayTemp, lenArray);
          when 5=>
             Put_Line("Opción: Calcular y mostrar temperatura media");
 

@@ -5,26 +5,29 @@ with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 package body gestionArrayTemp is
   
    
-   procedure rellenarArray(valorTemp: Float; arrayTemp: out tipoArrayTemp; lenArray: in out Integer) is
+   procedure rellenarArray(valorTemp: T_temp; arrayTemp: out tipoArrayTemp; lenArray: in out Integer) is
       -- Esta función se llamará cada vez que se genere un nuevo valor de temperatura y lo almacenará en 
       -- la última posición ocupada de ese array. 
 
        
    begin
               
-      lenArray := lenArray + 1;    
-      arrayTemp(lenArray) := valorTemp; 
-      
-      if lenArray = 15 then 
-         lenArray := 3;
-         arrayTemp := arrayLLeno(arrayTemp); 
+      if lenArray < 15 then 
          
-      end if;     
+         lenArray := lenArray + 1;    
+         arrayTemp(lenArray) := valorTemp; 
+         
+           
+      elsif lenArray = 15 then 
+         
+         lenArray := 3;
+         arrayTemp := arrayLLeno(arrayTemp, valorTemp); 
       
+      end if;   
       
    end rellenarArray; 
        
-   function arrayLLeno(arrayTemp: tipoArrayTemp) return tipoArrayTemp is
+   function arrayLLeno(arrayTemp: tipoArrayTemp; valorTemp: T_temp) return tipoArrayTemp is
       -- Esta función se llamará cuando se hayan ocupado las 15 posiciones del array. 
       
       -- El array de salida de esta función es todo cero, excepto los tres primeros valores. 
@@ -32,9 +35,9 @@ package body gestionArrayTemp is
       
    begin
       
-      arraySalida(1) := arrayTemp(13);
-      arraySalida(2) := arrayTemp(14);
-      arraySalida(3) := arrayTemp(15);   
+      arraySalida(1) := arrayTemp(14);
+      arraySalida(2) := arrayTemp(15);
+      arraySalida(3) := valorTemp;
       
       return arraySalida;
       
@@ -49,7 +52,7 @@ package body gestionArrayTemp is
       
       for i in 1..lenArray loop
          
-         Put(Float'Image(arrayTemp(i))); 
+         Put(T_temp'Image(arrayTemp(i))); 
       end loop; 
       
       New_Line; 

@@ -1,23 +1,23 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr
-20231201151350 fcccde1fb64f1e612fc8de618983123c
+C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr
+20231124132726 b996f538bcdef451dedd3df26549f32b
 [BOUND OBJECT FILES]
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\tipos_nuevos.o
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\calc_temp_media.o
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\porc_temp_umbral.o
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\rellenararraytemp.o
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\main.o
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\tipos_nuevos.o
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\calc_temp_media.o
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\porc_temp_umbral.o
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
--LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
--LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
+-LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
+-LC:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
 -static
 -static-libgcc
-C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+C:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
 -Wl,--stack=0x2000000

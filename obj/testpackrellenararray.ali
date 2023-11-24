@@ -6,10 +6,11 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U testpackrellenararray%b  testpackrellenararray.adb  5d0379b6 NE OO SU
+U testpackrellenararray%b  testpackrellenararray.adb  e9264e6d NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -31,7 +32,7 @@ D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D gestionarraytemp.ads	20231130215550 e0e4b8c9 gestionarraytemp%s
+D gestionarraytemp.ads	20231124134120 d8f4820d gestionarraytemp%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D system.ads		20210520051136 2ffa5114 system%s
@@ -49,10 +50,12 @@ D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
-D testpackrellenararray.adb  20231201150938 04d2da16 testpackrellenararray%b
+D testpackrellenararray.adb  20231124132502 88e7d709 testpackrellenararray%b
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z b b [testpackrellenararray standard 8 11 none]
+G r c none [testpackrellenararray standard 8 11 none] [rellenararray gestionarraytemp 5 14 none]
+G r c none [testpackrellenararray standard 8 11 none] [mostrararray gestionarraytemp 7 14 none]
 X 1 ada.ads
 16K9*Ada 20e8 33|1r6 1r23 2r6 2r31 3r6 3r29
 X 3 a-flteio.ads
@@ -61,8 +64,17 @@ X 4 a-inteio.ads
 18K13*Integer_Text_IO[13|46] 33|2w10 2r35
 X 11 a-textio.ads
 58K13*Text_IO 725e16 33|1w10 1r27
+506U14*Put_Line 33|18s7
+X 12 a-tiflio.ads
+60U14*Get 33|19s7[3|20]
 X 15 gestionarraytemp.ads
 1K9*gestionArrayTemp 9e21 33|5w6 5r28
+3A9*tipoArrayTemp(float)<integer> 33|12r15
+5U14*rellenarArray 33|20s7
+7U14*mostrarArray 33|22s7
 X 33 testpackrellenararray.adb
 8U11*testPackRellenarArray 8b11 27l5 27t26
+10f4 valorTemp{float} 19m11 20r21
+11i4 lenArray{integer} 20m43 20r43 22r31
+12a4 arrayTemp{15|3A9} 20m32 22r20
 
