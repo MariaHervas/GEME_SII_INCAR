@@ -2,6 +2,9 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
+with rellenarArrayTemp; use rellenarArrayTemp;
+with mostrarArray; use mostrarArray;
+
 procedure Main is
 
    function menu return Boolean is
@@ -40,6 +43,7 @@ procedure Main is
 
 
    terminar : Boolean;
+   lenArray : Integer := 0;
 
 begin
 

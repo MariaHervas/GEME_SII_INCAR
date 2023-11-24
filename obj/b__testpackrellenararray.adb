@@ -1,7 +1,7 @@
 pragma Warnings (Off);
 pragma Ada_95;
-pragma Source_File_Name (ada_main, Spec_File_Name => "b__main.ads");
-pragma Source_File_Name (ada_main, Body_File_Name => "b__main.adb");
+pragma Source_File_Name (ada_main, Spec_File_Name => "b__testpackrellenararray.ads");
+pragma Source_File_Name (ada_main, Body_File_Name => "b__testpackrellenararray.adb");
 pragma Suppress (Overflow_Check);
 with Ada.Exceptions;
 
@@ -31,6 +31,7 @@ package body ada_main is
    E119 : Short_Integer; pragma Import (Ada, E119, "ada__finalization_E");
    E118 : Short_Integer; pragma Import (Ada, E118, "system__file_io_E");
    E094 : Short_Integer; pragma Import (Ada, E094, "ada__text_io_E");
+   E160 : Short_Integer; pragma Import (Ada, E160, "gestionarraytemp_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -208,10 +209,11 @@ package body ada_main is
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E094 := E094 + 1;
+      E160 := E160 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
-   pragma Import (Ada, Ada_Main_Program, "_ada_main");
+   pragma Import (Ada, Ada_Main_Program, "_ada_testpackrellenararray");
 
    function main
      (argc : Integer;
@@ -245,7 +247,8 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.o
+   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
+   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\testpackrellenararray.o
    --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
    --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
    --   -LC:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/

@@ -23,7 +23,7 @@ package ada_main is
    GNAT_Version_Address : constant System.Address := GNAT_Version'Address;
    pragma Export (C, GNAT_Version_Address, "__gnat_version_address");
 
-   Ada_Main_Program_Name : constant String := "_ada_main" & ASCII.NUL;
+   Ada_Main_Program_Name : constant String := "_ada_testpackrellenararray" & ASCII.NUL;
    pragma Export (C, Ada_Main_Program_Name, "__gnat_ada_main_program_name");
 
    procedure adainit;
@@ -40,8 +40,8 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#5b6d046f#;
-   pragma Export (C, u00001, "mainB");
+   u00001 : constant Version_32 := 16#d13674a9#;
+   pragma Export (C, u00001, "testpackrellenararrayB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
    u00003 : constant Version_32 := 16#664ecad3#;
@@ -356,10 +356,14 @@ package ada_main is
    pragma Export (C, u00157, "system__val_llliS");
    u00158 : constant Version_32 := 16#f82486d6#;
    pragma Export (C, u00158, "system__val_llluS");
-   u00159 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00159, "system__memoryB");
-   u00160 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00160, "system__memoryS");
+   u00159 : constant Version_32 := 16#71c80e31#;
+   pragma Export (C, u00159, "gestionarraytempB");
+   u00160 : constant Version_32 := 16#e0e4b8c9#;
+   pragma Export (C, u00160, "gestionarraytempS");
+   u00161 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00161, "system__memoryB");
+   u00162 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00162, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -521,7 +525,9 @@ package ada_main is
    --  ada.float_text_io%b
    --  ada.integer_text_io%s
    --  ada.integer_text_io%b
-   --  main%b
+   --  gestionarraytemp%s
+   --  gestionarraytemp%b
+   --  testpackrellenararray%b
    --  END ELABORATION ORDER
 
 end ada_main;
