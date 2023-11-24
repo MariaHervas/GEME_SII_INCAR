@@ -34,8 +34,8 @@ package body ada_main is
    E167 : Short_Integer; pragma Import (Ada, E167, "ada__calendar_E");
    E094 : Short_Integer; pragma Import (Ada, E094, "ada__text_io_E");
    E165 : Short_Integer; pragma Import (Ada, E165, "system__random_seed_E");
-   E179 : Short_Integer; pragma Import (Ada, E179, "gestionarraytemp_E");
    E176 : Short_Integer; pragma Import (Ada, E176, "calc_temp_media_E");
+   E179 : Short_Integer; pragma Import (Ada, E179, "gestionarraytemp_E");
    E181 : Short_Integer; pragma Import (Ada, E181, "porc_temp_umbral_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
@@ -221,8 +221,8 @@ package body ada_main is
       E094 := E094 + 1;
       System.Random_Seed'Elab_Body;
       E165 := E165 + 1;
-      E179 := E179 + 1;
       E176 := E176 + 1;
+      E179 := E179 + 1;
       porc_temp_umbral'elab_body;
       E181 := E181 + 1;
    end adainit;
@@ -262,9 +262,9 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\tipos_nuevos.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\calc_temp_media.o
+   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\porc_temp_umbral.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.o
    --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\

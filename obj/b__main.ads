@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#093f889a#;
+   u00001 : constant Version_32 := 16#4d22050b#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -394,18 +394,22 @@ package ada_main is
    pragma Export (C, u00176, "calc_temp_mediaS");
    u00177 : constant Version_32 := 16#43342dba#;
    pragma Export (C, u00177, "tipos_nuevosS");
-   u00178 : constant Version_32 := 16#71c80e31#;
+   u00178 : constant Version_32 := 16#9e56ac32#;
    pragma Export (C, u00178, "gestionarraytempB");
-   u00179 : constant Version_32 := 16#e0e4b8c9#;
+   u00179 : constant Version_32 := 16#3d420b20#;
    pragma Export (C, u00179, "gestionarraytempS");
    u00180 : constant Version_32 := 16#bde8906d#;
    pragma Export (C, u00180, "porc_temp_umbralB");
    u00181 : constant Version_32 := 16#2421165a#;
    pragma Export (C, u00181, "porc_temp_umbralS");
-   u00182 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00182, "system__memoryB");
-   u00183 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00183, "system__memoryS");
+   u00182 : constant Version_32 := 16#fd83e873#;
+   pragma Export (C, u00182, "system__concat_2B");
+   u00183 : constant Version_32 := 16#2d5a86c4#;
+   pragma Export (C, u00183, "system__concat_2S");
+   u00184 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00184, "system__memoryB");
+   u00185 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00185, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -457,6 +461,8 @@ package ada_main is
    --  system.wch_jis%b
    --  system.wch_cnv%s
    --  system.wch_cnv%b
+   --  system.concat_2%s
+   --  system.concat_2%b
    --  system.exn_flt%s
    --  system.exn_lflt%s
    --  system.exn_llf%s
@@ -583,11 +589,11 @@ package ada_main is
    --  system.random_numbers%b
    --  ada.numerics.float_random%s
    --  ada.numerics.float_random%b
-   --  gestionarraytemp%s
-   --  gestionarraytemp%b
    --  tipos_nuevos%s
    --  calc_temp_media%s
    --  calc_temp_media%b
+   --  gestionarraytemp%s
+   --  gestionarraytemp%b
    --  porc_temp_umbral%s
    --  porc_temp_umbral%b
    --  main%b

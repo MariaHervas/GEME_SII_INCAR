@@ -22,6 +22,7 @@ procedure Main is
 
    ---------TIPOS------------
 
+
    --------------------------
 
    --------FUNCIONES---------
@@ -63,6 +64,9 @@ procedure Main is
 
       eleccion : Natural range 0..7;
       temperatura_actual : T_temp;
+      arrayTemp: tipoArrayTemp;
+      lenArray : Integer := 0;
+
    begin
 
       Put_Line("----------- MENU OPCIONES -----------");
@@ -94,7 +98,11 @@ procedure Main is
             Put(" grados"); New_Line; New_Line;
          when 3=>
             Put_Line("Opción: Leer temperatura y guardar en array");
-            rellenarArray(valorTemp, arrayTemp, lenArray);
+            temperatura_actual := leer_temperatura;
+            rellenarArray(temperatura_actual, arrayTemp, lenArray);
+            mostrarArray(arrayTemp, lenArray);
+            Put_Line("Longitud array: " & Integer'Image(lenArray));
+
          when 4=>
             Put_Line("Opción: Mostrar temperaturas del array");
             mostrarArray(arrayTemp, lenArray);
@@ -123,7 +131,6 @@ procedure Main is
 
 
    terminar : Boolean;
-   lenArray : Integer := 0;
 
 begin
 
