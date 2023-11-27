@@ -10,6 +10,7 @@ procedure Main is
       Put_Line("5: Calcular y mostrar temperatura media");
       Put_Line("6: Calcular y mostrar porcentaje temperaturas > umbral");
       Put_Line("7: Función extra");--FALTA POR DEFINIR ---
+      Put_Line("0: Salir");
    end menu;
 
 
