@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Locations >
+<Locations>
   <Project>
     <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_file>
     <file_marker column=" 1" line=" 1" >
@@ -10,27 +10,27 @@
       <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 37" line=" 10" >
+    <file_marker column=" 37" line=" 15" >
       <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 11" line=" 24" >
+    <file_marker column=" 11" line=" 29" >
       <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 19" line=" 54" >
+    <file_marker column=" 15" line=" 71" >
       <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 7" >
+    <file_marker column=" 4" line=" 12" >
       <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 23" line=" 37" >
+    <file_marker column=" 23" line=" 57" >
       <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 18" line=" 10" >
+    <file_marker column=" 18" line=" 15" >
       <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
@@ -38,7 +38,15 @@
       <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 18" line=" 10" >
+    <file_marker column=" 18" line=" 15" >
+      <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 9" >
       <vfs_project>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file>C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>

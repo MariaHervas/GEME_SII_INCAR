@@ -61,7 +61,6 @@ procedure Main is
    end menu;
 
 
-
    terminar : Boolean;
 
 begin
