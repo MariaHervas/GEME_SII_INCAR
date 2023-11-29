@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Locations>
+  <Project>
+    <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\test.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\test.gpr</vfs_project>
+      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\test.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\test.gpr</vfs_project>
+      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\rellenararraytemp.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\test.gpr</vfs_project>
+      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
