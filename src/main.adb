@@ -9,9 +9,13 @@ with Tipos_nuevos; use Tipos_nuevos;
 with Calc_temp_media; use Calc_temp_media;
 with porc_temp_umbral; use porc_temp_umbral;
 with rellenarArrayTemp; use rellenarArrayTemp;
+--with mostrarArray; use mostrarArray;
 --------------------------------------------------------------
 --------------------------------------------------------------
 --------------------------------------------------------------
+
+
+
 
 procedure Main is
 
@@ -105,6 +109,7 @@ procedure Main is
 
 
    terminar : Boolean;
+   lenArray : Integer := 0;
 
 begin
 

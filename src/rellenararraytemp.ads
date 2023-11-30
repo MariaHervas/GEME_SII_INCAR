@@ -2,8 +2,10 @@ with Tipos_nuevos; use Tipos_nuevos;
 
 package rellenarArrayTemp is
 
-   
-   procedure rellenarArray(valorTemp: Float; arrayTemp: out tipoArrayTemp; lenArray: out Integer); 
+   type tipoArrayTemp is array(1..15) of Float;
+
+   procedure rellenarArray(valorTemp: Float; arrayTemp: out tipoArrayTemp; lenArray: in out Integer);
    function arrayLLeno(arrayTemp: tipoArrayTemp) return tipoArrayTemp;
-   
+   procedure mostrarArray(arrayTemp: in tipoArrayTemp; lenArray: in Integer);
+
 end rellenarArrayTemp;

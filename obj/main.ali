@@ -11,7 +11,7 @@ RV NO_IO
 RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		a14277ce NE OO SU
+U main%b		main.adb		7ecb8e6c NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -43,9 +43,9 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D calc_temp_media.ads	20231130212142 73b62219 calc_temp_media%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20231130211954 6944179e main%b
+D main.adb		20231130215704 65e27143 main%b
 D porc_temp_umbral.ads	20231130214142 8f123191 porc_temp_umbral%s
-D rellenararraytemp.ads	20231130212250 55183af6 rellenararraytemp%s
+D rellenararraytemp.ads	20231130215550 8637a589 rellenararraytemp%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -65,7 +65,7 @@ D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D tipos_nuevos.ads	20231130211928 1c675e9e tipos_nuevos%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [main standard 16 11 none]
+G c Z b b [main standard 20 11 none]
 X 1 ada.ads
 16K9*Ada 20e8 20|1r6 1r24 2r6 2r23 3r6 3r31 4r6 4r29 5r6 5r37
 X 3 a-flteio.ads
@@ -76,43 +76,44 @@ X 6 a-numeri.ads
 16K13*Numerics 35e17 20|1w10 1r28 5r10 5r41
 X 7 a-nuflra.ads
 41K22*Float_Random 74e30 20|5w19 5r50
-47R9*Generator<29|65R9> 20|27r11
+47R9*Generator<29|65R9> 20|31r11
 49F12*Uniformly_Distributed{float}
-51V13*Random{49F12}<29|73p13> 20|33s24
-53U14*Reset<29|103p14> 20|32s7
+51V13*Random{49F12}<29|73p13> 20|37s24
+53U14*Reset<29|103p14> 20|36s7
 X 13 a-textio.ads
 58K13*Text_IO 725e16 20|2w10 2r27
 87I12*Field{integer}
-262U14*New_Line 20|65s7 77s29 77s39
-463U14*Put 20|63s7 75s13 77s13
-506U14*Put_Line 20|53s7 54s7 55s7 56s7 57s7 58s7 59s7 60s7 61s7 69s13 71s13
-. 73s13 79s13 82s13 84s13 87s13 89s13 91s13
+262U14*New_Line 20|69s7 81s29 81s39
+463U14*Put 20|67s7 79s13 81s13
+506U14*Put_Line 20|57s7 58s7 59s7 60s7 61s7 62s7 63s7 64s7 65s7 73s13 75s13
+. 77s13 83s13 86s13 88s13 91s13 93s13 95s13
 X 14 a-tiflio.ads
-82U14*Put 20|76s13[3|20]
-83f7 Item{float} 20|76r17[3|20]
-84i7 Fore{13|87I12} 20|76r43[3|20]
-85i7 Aft{13|87I12} 20|76r54[3|20]
-86i7 Exp{13|87I12} 20|76r64[3|20]
+82U14*Put 20|80s13[3|20]
+83f7 Item{float} 20|80r17[3|20]
+84i7 Fore{13|87I12} 20|80r43[3|20]
+85i7 Aft{13|87I12} 20|80r54[3|20]
+86i7 Exp{13|87I12} 20|80r64[3|20]
 X 15 a-tiinio.ads
-59U14*Get 20|64s7[4|18]
+59U14*Get 20|68s7[4|18]
 X 17 calc_temp_media.ads
 3K9*Calc_temp_media 17e20 20|9w6 9r27
 X 20 main.adb
-16U11*Main 16b11 119l5 119t9
-25V13 leer_temperatura{39|3F12} 25b13 36l8 36t24 74s35
-27r7 G{7|47R9} 32r13 33r31
-28f7 voltage_leido{float} 33m7 34r40
-30f7 temperatura_leida{39|3F12} 34m7 35r14
-38U14 calentar 38b14 42l8 42t16
-46V13 menu{boolean} 46b13 102l8 102t12 112s19
-49i7 eleccion{natural} 64m11 67r12 95r10
-50f7 temperatura_actual{39|3F12} 74m13 76r23
-107b4 terminar{boolean} 112m7 113r10
+20U11*Main 20b11 124l5 124t9
+29V13 leer_temperatura{39|3F12} 29b13 40l8 40t24 78s35
+31r7 G{7|47R9} 36r13 37r31
+32f7 voltage_leido{float} 37m7 38r40
+34f7 temperatura_leida{39|3F12} 38m7 39r14
+42U14 calentar 42b14 46l8 46t16
+50V13 menu{boolean} 50b13 106l8 106t12 117s19
+53i7 eleccion{natural} 68m11 71r12 99r10
+54f7 temperatura_actual{39|3F12} 78m13 80r23
+111b4 terminar{boolean} 117m7 118r10
+112i4 lenArray{integer}
 X 21 porc_temp_umbral.ads
 2K9*porc_temp_umbral 20|10w6 10r28 21|15e21
 X 22 rellenararraytemp.ads
-3K9*rellenarArrayTemp 20|11w6 11r29 22|9e22
+3K9*rellenarArrayTemp 20|11w6 11r29 22|11e22
 X 39 tipos_nuevos.ads
 1K9*Tipos_nuevos 20|8w6 8r24 39|6e17
-3F12*T_temp{float} 20|25r37 30r27 34r28 50r28
+3F12*T_temp{float} 20|29r37 34r27 38r28 54r28
 

@@ -1,0 +1,33 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U rellenararraytemp%b	rellenararraytemp.adb	abb65945 NE OO PK
+
+U rellenararraytemp%s	rellenararraytemp.ads	e91015cc EE NE OO PK
+
+D rellenararraytemp.ads	20231124130438 e91015cc rellenararraytemp%s
+D rellenararraytemp.adb	20231124130426 42a64c89 rellenararraytemp%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [rellenararray rellenararraytemp 5 14 none]
+G c Z s b [arraylleno rellenararraytemp 6 13 none]
+G c Z s s [TtipoarraytempBIP rellenararraytemp 3 4 none]
+X 1 rellenararraytemp.ads
+1K9*rellenarArrayTemp 8l5 8e22 2|1b14 37l5 37t22
+3A9*tipoArrayTemp(float)<integer> 5r61 6r35 6r57 2|4r61 21r35 21r57 25r20
+5U14*rellenarArray 5>28 5<46 5=76 2|4b14 19l8 19t21
+5f28 valorTemp{float} 2|4b28 12r30
+5a46 arrayTemp{3A9} 2|4b46 12m7 15m10 15r34
+5i76 lenArray{integer} 2|4b76 11m7 11r19 12r17 14r10 16m10
+6V13*arrayLLeno{3A9} 6>24 2|15s23 21b13 35l8 35t18
+6a24 arrayTemp{3A9} 2|21b24 29r25 30r25 31r25
+X 2 rellenararraytemp.adb
+25a7 arraySalida{1|3A9} 29m7 30m7 31m7 33r14
+

@@ -1,7 +1,7 @@
 pragma Warnings (Off);
 pragma Ada_95;
-pragma Source_File_Name (ada_main, Spec_File_Name => "b__main.ads");
-pragma Source_File_Name (ada_main, Body_File_Name => "b__main.adb");
+pragma Source_File_Name (ada_main, Spec_File_Name => "b__testpackrellenararray.ads");
+pragma Source_File_Name (ada_main, Body_File_Name => "b__testpackrellenararray.adb");
 pragma Suppress (Overflow_Check);
 with Ada.Exceptions;
 
@@ -22,7 +22,6 @@ package body ada_main is
    E045 : Short_Integer; pragma Import (Ada, E045, "system__dwarf_lines_E");
    E021 : Short_Integer; pragma Import (Ada, E021, "system__soft_links__initialize_E");
    E037 : Short_Integer; pragma Import (Ada, E037, "system__traceback__symbolic_E");
-   E159 : Short_Integer; pragma Import (Ada, E159, "ada__numerics_E");
    E100 : Short_Integer; pragma Import (Ada, E100, "ada__strings__utf_encoding_E");
    E106 : Short_Integer; pragma Import (Ada, E106, "ada__tags_E");
    E098 : Short_Integer; pragma Import (Ada, E098, "ada__strings__text_buffers_E");
@@ -31,9 +30,8 @@ package body ada_main is
    E121 : Short_Integer; pragma Import (Ada, E121, "system__finalization_root_E");
    E119 : Short_Integer; pragma Import (Ada, E119, "ada__finalization_E");
    E118 : Short_Integer; pragma Import (Ada, E118, "system__file_io_E");
-   E167 : Short_Integer; pragma Import (Ada, E167, "ada__calendar_E");
    E094 : Short_Integer; pragma Import (Ada, E094, "ada__text_io_E");
-   E165 : Short_Integer; pragma Import (Ada, E165, "system__random_seed_E");
+   E160 : Short_Integer; pragma Import (Ada, E160, "gestionarraytemp_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -189,8 +187,6 @@ package body ada_main is
       System.Traceback.Symbolic'Elab_Body;
       E037 := E037 + 1;
       E008 := E008 + 1;
-      Ada.Numerics'Elab_Spec;
-      E159 := E159 + 1;
       Ada.Strings.Utf_Encoding'Elab_Spec;
       E100 := E100 + 1;
       Ada.Tags'Elab_Spec;
@@ -210,18 +206,14 @@ package body ada_main is
       E119 := E119 + 1;
       System.File_Io'Elab_Body;
       E118 := E118 + 1;
-      Ada.Calendar'Elab_Spec;
-      Ada.Calendar'Elab_Body;
-      E167 := E167 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E094 := E094 + 1;
-      System.Random_Seed'Elab_Body;
-      E165 := E165 + 1;
+      E160 := E160 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
-   pragma Import (Ada, Ada_Main_Program, "_ada_main");
+   pragma Import (Ada, Ada_Main_Program, "_ada_testpackrellenararray");
 
    function main
      (argc : Integer;
@@ -255,7 +247,8 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.o
+   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
+   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\testpackrellenararray.o
    --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
    --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
    --   -LC:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
