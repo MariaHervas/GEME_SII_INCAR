@@ -1,3 +1,5 @@
+with Tipos_nuevos; use Tipos_nuevos;
+
 package rellenarArrayTemp is
 
    
