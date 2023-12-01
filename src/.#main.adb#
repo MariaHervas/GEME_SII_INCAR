@@ -97,7 +97,7 @@ procedure Main is
             --rellenarArray(valorTemp, arrayTemp, lenArray);
          when 4=>
             Put_Line("Opción: Mostrar temperaturas del array");
-            --mostrarArray();
+            mostrarArray();
          when 5=>
             Put_Line("Opción: Calcular y mostrar temperatura media");
 

@@ -40,15 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-<<<<<<< HEAD
-   u00001 : constant Version_32 := 16#453f2ba7#;
-=======
-<<<<<<< HEAD
-   u00001 : constant Version_32 := 16#5b6d046f#;
-=======
-   u00001 : constant Version_32 := 16#5e9de40b#;
->>>>>>> f67132a77907888169e0866a8543e34d1e759ae2
->>>>>>> 2c1b9b572277b6336f5719ceba025e35e0e23a33
+   u00001 : constant Version_32 := 16#10161859#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -396,10 +388,24 @@ package ada_main is
    pragma Export (C, u00173, "system__task_lockS");
    u00174 : constant Version_32 := 16#b8c476a4#;
    pragma Export (C, u00174, "system__win32__extS");
-   u00175 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00175, "system__memoryB");
-   u00176 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00176, "system__memoryS");
+   u00175 : constant Version_32 := 16#04ca07ca#;
+   pragma Export (C, u00175, "calc_temp_mediaB");
+   u00176 : constant Version_32 := 16#30820fa3#;
+   pragma Export (C, u00176, "calc_temp_mediaS");
+   u00177 : constant Version_32 := 16#43342dba#;
+   pragma Export (C, u00177, "tipos_nuevosS");
+   u00178 : constant Version_32 := 16#bde8906d#;
+   pragma Export (C, u00178, "porc_temp_umbralB");
+   u00179 : constant Version_32 := 16#2421165a#;
+   pragma Export (C, u00179, "porc_temp_umbralS");
+   u00180 : constant Version_32 := 16#143d3ac8#;
+   pragma Export (C, u00180, "rellenararraytempB");
+   u00181 : constant Version_32 := 16#76e52a83#;
+   pragma Export (C, u00181, "rellenararraytempS");
+   u00182 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00182, "system__memoryB");
+   u00183 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00183, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -577,6 +583,13 @@ package ada_main is
    --  system.random_numbers%b
    --  ada.numerics.float_random%s
    --  ada.numerics.float_random%b
+   --  tipos_nuevos%s
+   --  calc_temp_media%s
+   --  calc_temp_media%b
+   --  porc_temp_umbral%s
+   --  porc_temp_umbral%b
+   --  rellenararraytemp%s
+   --  rellenararraytemp%b
    --  main%b
    --  END ELABORATION ORDER
 

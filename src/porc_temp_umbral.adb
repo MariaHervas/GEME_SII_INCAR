@@ -7,7 +7,7 @@ with Tipos_nuevos; use Tipos_nuevos;
 
 package body porc_temp_umbral is
    
-   procedure Porcentaje_Dentro_Del_Umbral is
+   procedure Porcentaje_Dentro_Del_Umbral (ArrayTemp: in tipoArrayTemp) is
       
    begin
       

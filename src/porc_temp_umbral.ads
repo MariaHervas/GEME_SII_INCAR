@@ -11,5 +11,5 @@ package porc_temp_umbral is
    arrayTemp: tipoArrayTemp;
    lenArray: Integer;
    
-   procedure Porcentaje_Dentro_Del_Umbra (ArrayTemp: in TipoArrayTemp);
+   procedure Porcentaje_Dentro_Del_Umbral (ArrayTemp: in tipoArrayTemp);
 end porc_temp_umbral;

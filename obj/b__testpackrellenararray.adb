@@ -247,11 +247,11 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\testpackrellenararray.o
-   --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
-   --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
-   --   -LC:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+   --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\gestionarraytemp.o
+   --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\testpackrellenararray.o
+   --   -LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
+   --   -LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
+   --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnat
    --   -Wl,--stack=0x2000000
