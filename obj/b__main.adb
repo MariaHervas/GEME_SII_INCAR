@@ -245,9 +245,9 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\main.o
-   --   -LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
-   --   -LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
+   --   C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\main.o
+   --   -LC:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\
+   --   -LC:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnat

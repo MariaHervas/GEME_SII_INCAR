@@ -32,7 +32,7 @@ D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20231129103628 e7a8ff62 main%b
+D main.adb		20231129115240 e7a8ff62 main%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -66,8 +66,8 @@ X 11 a-textio.ads
 X 13 a-tiinio.ads
 59U14*Get 17|29s7[4|18]
 X 17 main.adb
-5U11*Main 5b11 77l5 77t9
-12V13 menu{boolean} 12b13 61l8 61t12 70s19
+5U11*Main 5b11 76l5 76t9
+12V13 menu{boolean} 12b13 61l8 61t12 69s19
 15i7 eleccion{natural} 29m11 32r12 54r10
-65b4 terminar{boolean} 70m7 71r10
+64b4 terminar{boolean} 69m7 70r10
 

@@ -42,9 +42,9 @@ procedure Main is
             Put_Line("Opción: Mostrar temperaturas del array");
          when 5=>
             Put_Line("Opción: Calcular y mostrar temperatura media");
-         when 6=>
-            Put_Line("Opción: Calcular y mostrar porcentaje temperaturas > umbral");
-         when 7=>
+         when 6=> Calcular_Temp_Media(arrayTemp);
+            Put_Line("Opción: Calcular y mostrar porcentaje de temperaturas dentro de un umbral");
+         when 7=> Porcentaje_Dentro_Del_Umbral(arrayTemp);
             Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
          when others =>
             Put_Line("No es una opción válida.");
