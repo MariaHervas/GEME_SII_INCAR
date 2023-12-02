@@ -7,7 +7,7 @@ with gestionArrayTemp; use gestionArrayTemp;
 
 procedure testPackRellenarArray is
    
-   valorTemp : Float;
+   valorTemp : T_temp;
    lenArray : Integer := 0;
    arrayTemp: tipoArrayTemp; 
    

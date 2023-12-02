@@ -9,7 +9,7 @@ RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U gestionarraytemp%b	gestionarraytemp.adb	71c80e31 NE OO PK
+U gestionarraytemp%b	gestionarraytemp.adb	88877afd NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -17,7 +17,7 @@ Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
 
-U gestionarraytemp%s	gestionarraytemp.ads	e0e4b8c9 EE NE OO PK
+U gestionarraytemp%s	gestionarraytemp.ads	d8f4820d EE NE OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
@@ -34,8 +34,8 @@ D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D gestionarraytemp.ads	20231130215550 e0e4b8c9 gestionarraytemp%s
-D gestionarraytemp.adb	20231130215550 2819ad91 gestionarraytemp%b
+D gestionarraytemp.ads	20231124134120 d8f4820d gestionarraytemp%s
+D gestionarraytemp.adb	20231124134132 e946e399 gestionarraytemp%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D system.ads		20210520051136 2ffa5114 system%s
@@ -72,23 +72,24 @@ X 4 a-inteio.ads
 18K13*Integer_Text_IO[13|46] 16|2w10 2r35
 X 11 a-textio.ads
 58K13*Text_IO 725e16 16|1w10 1r27
-262U14*New_Line 16|48s7 55s7
-463U14*Put 16|52s10
-506U14*Put_Line 16|47s7
+262U14*New_Line 16|51s7 58s7
+463U14*Put 16|55s10
+506U14*Put_Line 16|50s7
 X 15 gestionarraytemp.ads
-1K9*gestionArrayTemp 9l5 9e21 16|5b14 59l5 59t21
-3A9*tipoArrayTemp(float)<integer> 5r61 6r35 6r57 7r41 16|8r61 27r35 27r57
-. 31r20 43r41
-5U14*rellenarArray 5>28 5<46 5=76 16|8b14 25l8 25t21
-5f28 valorTemp{float} 16|8b28 16r30
-5a46 arrayTemp{3A9} 16|8b46 16m7 20m10 20r34
-5i76 lenArray{integer} 16|8b76 15m7 15r19 16r17 18r10 19m10
-6V13*arrayLLeno{3A9} 6>24 16|20s23 27b13 41l8 41t18
-6a24 arrayTemp{3A9} 16|27b24 35r25 36r25 37r25
-7U14*mostrarArray 7>27 7>56 16|43b14 57l8 57t20
-7a27 arrayTemp{3A9} 16|43b27 52r26
-7i56 lenArray{integer} 16|43b56 50r19
+1K9*gestionArrayTemp 9l5 9e21 16|5b14 62l5 62t21
+3A9*tipoArrayTemp(float)<integer> 5r61 6r35 6r75 7r41 16|8r61 30r35 30r75
+. 34r20 46r41
+5U14*rellenarArray 5>28 5<46 5=76 16|8b14 28l8 28t21
+5f28 valorTemp{float} 16|8b28 18r33 24r45
+5a46 arrayTemp{3A9} 16|8b46 18m10 24m10 24r34
+5i76 lenArray{integer} 16|8b76 15r10 17m10 17r22 18r20 21r13 23m10
+6V13*arrayLLeno{3A9} 6>24 6>50 16|24s23 30b13 44l8 44t18
+6a24 arrayTemp{3A9} 16|30b24 38r25 39r25
+6f50 valorTemp{float} 16|30b50 40r25
+7U14*mostrarArray 7>27 7>56 16|46b14 60l8 60t20
+7a27 arrayTemp{3A9} 16|46b27 55r26
+7i56 lenArray{integer} 16|46b56 53r19
 X 16 gestionarraytemp.adb
-31a7 arraySalida{15|3A9} 35m7 36m7 37m7 39r14
-50i11 i{integer} 52r36
+34a7 arraySalida{15|3A9} 38m7 39m7 40m7 42r14
+53i11 i{integer} 55r36
 
