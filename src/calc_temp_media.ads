@@ -1,4 +1,8 @@
+with Tipos_nuevos; use Tipos_nuevos;
+
 package Calc_temp_media is --sin variables in out??
+   
+   
 
    private --variables no visibles para el usuario
    --variables internas del proceso

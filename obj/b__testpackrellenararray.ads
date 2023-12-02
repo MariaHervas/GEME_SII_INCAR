@@ -23,7 +23,7 @@ package ada_main is
    GNAT_Version_Address : constant System.Address := GNAT_Version'Address;
    pragma Export (C, GNAT_Version_Address, "__gnat_version_address");
 
-   Ada_Main_Program_Name : constant String := "_ada_main" & ASCII.NUL;
+   Ada_Main_Program_Name : constant String := "_ada_testpackrellenararray" & ASCII.NUL;
    pragma Export (C, Ada_Main_Program_Name, "__gnat_ada_main_program_name");
 
    procedure adainit;
@@ -40,16 +40,8 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-<<<<<<< HEAD
-   u00001 : constant Version_32 := 16#4d22050b#;
-=======
-<<<<<<< HEAD
-   u00001 : constant Version_32 := 16#c53d54e2#;
-=======
-   u00001 : constant Version_32 := 16#093f889a#;
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
-   pragma Export (C, u00001, "mainB");
+   u00001 : constant Version_32 := 16#e9264e6d#;
+   pragma Export (C, u00001, "testpackrellenararrayB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
    u00003 : constant Version_32 := 16#664ecad3#;
@@ -364,90 +356,14 @@ package ada_main is
    pragma Export (C, u00157, "system__val_llliS");
    u00158 : constant Version_32 := 16#f82486d6#;
    pragma Export (C, u00158, "system__val_llluS");
-   u00159 : constant Version_32 := 16#f2c63a02#;
-   pragma Export (C, u00159, "ada__numericsS");
-   u00160 : constant Version_32 := 16#d976e2b4#;
-   pragma Export (C, u00160, "ada__numerics__float_randomB");
-   u00161 : constant Version_32 := 16#077f89fa#;
-   pragma Export (C, u00161, "ada__numerics__float_randomS");
-   u00162 : constant Version_32 := 16#0774605b#;
-   pragma Export (C, u00162, "system__random_numbersB");
-   u00163 : constant Version_32 := 16#19a1600c#;
-   pragma Export (C, u00163, "system__random_numbersS");
-   u00164 : constant Version_32 := 16#15692802#;
-   pragma Export (C, u00164, "system__random_seedB");
-   u00165 : constant Version_32 := 16#c3b30278#;
-   pragma Export (C, u00165, "system__random_seedS");
-   u00166 : constant Version_32 := 16#48583e4e#;
-   pragma Export (C, u00166, "ada__calendarB");
-   u00167 : constant Version_32 := 16#31350a81#;
-   pragma Export (C, u00167, "ada__calendarS");
-   u00168 : constant Version_32 := 16#24ec69e6#;
-   pragma Export (C, u00168, "system__os_primitivesB");
-   u00169 : constant Version_32 := 16#280734e2#;
-   pragma Export (C, u00169, "system__os_primitivesS");
-   u00170 : constant Version_32 := 16#2f9cb76c#;
-   pragma Export (C, u00170, "system__arith_64B");
-   u00171 : constant Version_32 := 16#9d9eabfb#;
-   pragma Export (C, u00171, "system__arith_64S");
-   u00172 : constant Version_32 := 16#05c60a38#;
-   pragma Export (C, u00172, "system__task_lockB");
-   u00173 : constant Version_32 := 16#4e70667a#;
-   pragma Export (C, u00173, "system__task_lockS");
-   u00174 : constant Version_32 := 16#b8c476a4#;
-   pragma Export (C, u00174, "system__win32__extS");
-   u00175 : constant Version_32 := 16#04ca07ca#;
-   pragma Export (C, u00175, "calc_temp_mediaB");
-   u00176 : constant Version_32 := 16#30820fa3#;
-   pragma Export (C, u00176, "calc_temp_mediaS");
-   u00177 : constant Version_32 := 16#43342dba#;
-   pragma Export (C, u00177, "tipos_nuevosS");
-<<<<<<< HEAD
-   u00178 : constant Version_32 := 16#9e56ac32#;
-=======
-<<<<<<< HEAD
-   u00178 : constant Version_32 := 16#bde8906d#;
-   pragma Export (C, u00178, "porc_temp_umbralB");
-   u00179 : constant Version_32 := 16#2421165a#;
-   pragma Export (C, u00179, "porc_temp_umbralS");
-   u00180 : constant Version_32 := 16#143d3ac8#;
-   pragma Export (C, u00180, "rellenararraytempB");
-   u00181 : constant Version_32 := 16#76e52a83#;
-   pragma Export (C, u00181, "rellenararraytempS");
-   u00182 : constant Version_32 := 16#d4cbd257#;
-   pragma Export (C, u00182, "utilidadesB");
-   u00183 : constant Version_32 := 16#f3eb537c#;
-   pragma Export (C, u00183, "utilidadesS");
-   u00184 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00184, "system__memoryB");
-   u00185 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00185, "system__memoryS");
-=======
-   u00178 : constant Version_32 := 16#71c80e31#;
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
-   pragma Export (C, u00178, "gestionarraytempB");
-   u00179 : constant Version_32 := 16#3d420b20#;
-   pragma Export (C, u00179, "gestionarraytempS");
-   u00180 : constant Version_32 := 16#bde8906d#;
-   pragma Export (C, u00180, "porc_temp_umbralB");
-   u00181 : constant Version_32 := 16#2421165a#;
-   pragma Export (C, u00181, "porc_temp_umbralS");
-<<<<<<< HEAD
-   u00182 : constant Version_32 := 16#fd83e873#;
-   pragma Export (C, u00182, "system__concat_2B");
-   u00183 : constant Version_32 := 16#2d5a86c4#;
-   pragma Export (C, u00183, "system__concat_2S");
-   u00184 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00184, "system__memoryB");
-   u00185 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00185, "system__memoryS");
-=======
-   u00182 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00182, "system__memoryB");
-   u00183 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00183, "system__memoryS");
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
+   u00159 : constant Version_32 := 16#88877afd#;
+   pragma Export (C, u00159, "gestionarraytempB");
+   u00160 : constant Version_32 := 16#d8f4820d#;
+   pragma Export (C, u00160, "gestionarraytempS");
+   u00161 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00161, "system__memoryB");
+   u00162 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00162, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -499,8 +415,6 @@ package ada_main is
    --  system.wch_jis%b
    --  system.wch_cnv%s
    --  system.wch_cnv%b
-   --  system.concat_2%s
-   --  system.concat_2%b
    --  system.exn_flt%s
    --  system.exn_lflt%s
    --  system.exn_llf%s
@@ -568,7 +482,6 @@ package ada_main is
    --  system.traceback.symbolic%s
    --  system.traceback.symbolic%b
    --  ada.exceptions%b
-   --  ada.numerics%s
    --  ada.strings.utf_encoding%s
    --  ada.strings.utf_encoding%b
    --  ada.strings.utf_encoding.wide_strings%s
@@ -581,8 +494,6 @@ package ada_main is
    --  ada.strings.text_buffers%b
    --  ada.strings.text_buffers.utils%s
    --  ada.strings.text_buffers.utils%b
-   --  system.arith_64%s
-   --  system.arith_64%b
    --  system.fat_flt%s
    --  system.fat_lflt%s
    --  system.fat_llf%s
@@ -599,8 +510,6 @@ package ada_main is
    --  ada.finalization%s
    --  system.file_io%s
    --  system.file_io%b
-   --  system.task_lock%s
-   --  system.task_lock%b
    --  system.val_flt%s
    --  system.val_lflt%s
    --  system.val_llf%s
@@ -608,11 +517,6 @@ package ada_main is
    --  system.val_llli%s
    --  system.val_uns%s
    --  system.val_int%s
-   --  system.win32.ext%s
-   --  system.os_primitives%s
-   --  system.os_primitives%b
-   --  ada.calendar%s
-   --  ada.calendar%b
    --  ada.text_io%s
    --  ada.text_io%b
    --  ada.text_io.generic_aux%s
@@ -621,27 +525,9 @@ package ada_main is
    --  ada.float_text_io%b
    --  ada.integer_text_io%s
    --  ada.integer_text_io%b
-   --  system.random_seed%s
-   --  system.random_seed%b
-   --  system.random_numbers%s
-   --  system.random_numbers%b
-   --  ada.numerics.float_random%s
-   --  ada.numerics.float_random%b
-   --  tipos_nuevos%s
-   --  calc_temp_media%s
-   --  calc_temp_media%b
    --  gestionarraytemp%s
    --  gestionarraytemp%b
-   --  porc_temp_umbral%s
-   --  porc_temp_umbral%b
-<<<<<<< HEAD
-   --  rellenararraytemp%s
-   --  rellenararraytemp%b
-   --  utilidades%s
-   --  utilidades%b
-=======
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
-   --  main%b
+   --  testpackrellenararray%b
    --  END ELABORATION ORDER
 
 end ada_main;

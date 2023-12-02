@@ -1,16 +1,19 @@
 --librerías
 with Ada.Text_IO; use Ada.Text_IO;
-use Ada.Float_Text_IO; use Ada.Float_Text_IO;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
+
+with Tipos_nuevos; use Tipos_nuevos;
+
 
 
 package body Calc_temp_media is --el array no se pone, no???
    
    procedure Calcular_Temp_media (arrayTemp: in  tipoArrayTemp) is
-begin
+   begin
   
    Tot := 0.0;
 
-   for I in lenArray loop
+   for I in 0..lenArray loop
       Tot := Tot + arrayTemp(I);
       Kont := Kont + 1;
    end loop;
