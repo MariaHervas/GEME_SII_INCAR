@@ -19,19 +19,27 @@ RV NO_ELABORATION_CODE
 RV NO_OBSOLESCENT_FEATURES
 
 <<<<<<< HEAD
+U ada_main%b		b__main.adb		fdca8812 OO PK IL
+=======
+<<<<<<< HEAD
 U ada_main%b		b__main.adb		76247cd7 OO PK IL
 =======
 U ada_main%b		b__main.adb		ff91fda6 OO PK IL
 >>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
+>>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 Z system%s		system.ads		system.ali
 
 <<<<<<< HEAD
+U ada_main%s		b__main.ads		d38cfc8a EE NE OO PK IL
+=======
+<<<<<<< HEAD
 U ada_main%s		b__main.ads		33ffa72f EE NE OO PK IL
 =======
 U ada_main%s		b__main.ads		08775533 EE NE OO PK IL
 >>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
+>>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
 W system%s		system.ads		system.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
@@ -40,12 +48,17 @@ D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 <<<<<<< HEAD
+D b__main.ads		20231124141906 201ed01e ada_main%s
+D b__main.adb		20231124141906 49bb6818 ada_main%b
+=======
+<<<<<<< HEAD
 D b__main.ads		20231202112756 c06d8bbb ada_main%s
 D b__main.adb		20231202112756 2226c778 ada_main%b
 =======
 D b__main.ads		20231124133012 fbe579a7 ada_main%s
 D b__main.adb		20231124133012 901bb415 ada_main%b
 >>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
+>>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
 D system.ads		20210520051136 2ffa5114 system%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
@@ -64,11 +77,19 @@ X 1 ada.ads
 X 2 a-except.ads
 44K13*Exceptions 289e19 5|6w10
 X 4 b__main.ads
+<<<<<<< HEAD
+6K9*ada_main 602l5 602e13 5|8b14 278l5 278t13
+8i4*gnat_argc{integer} 12m22 12r22 5|250r10 251m10
+9m4*gnat_argv{6|67M9} 13m22 13r22 5|252m10
+10m4*gnat_envp{6|67M9} 14m22 14r22 5|254m7
+16i4*gnat_exit_status{integer} 17m22 17r22 5|261r15
+=======
 6K9*ada_main 602l5 602e13 5|8b14 282l5 282t13
 8i4*gnat_argc{integer} 12m22 12r22 5|253r10 254m10
 9m4*gnat_argv{6|67M9} 13m22 13r22 5|255m10
 10m4*gnat_envp{6|67M9} 14m22 14r22 5|257m7
 16i4*gnat_exit_status{integer} 17m22 17r22 5|264r15
+>>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
 19a4*GNAT_Version{string} 21r22 23r54
 23m4*GNAT_Version_Address{6|67M9} 24r22
 26a4*Ada_Main_Program_Name{string} 27r22 5|249r52
@@ -380,8 +401,8 @@ X 5 b__main.adb
 34i4 E167{short_integer} 34m46 34r46 218m7 218r15
 35i4 E094{short_integer} 35m46 35r46 50m7 50r15 221m7 221r15
 36i4 E165{short_integer} 36m46 36r46 223m7 223r15
-37i4 E179{short_integer} 37m46 37r46 224m7 224r15
-38i4 E176{short_integer} 38m46 38r46 225m7 225r15
+37i4 E176{short_integer} 37m46 37r46 224m7 224r15
+38i4 E179{short_integer} 38m46 38r46 225m7 225r15
 39i4 E181{short_integer} 39m46 39r46 227m7 227r15
 41a4 Sec_Default_Sized_Stacks(8|45R9) 159m32 159r32
 43a4 Local_Priority_Specific_Dispatching{string} 147r9

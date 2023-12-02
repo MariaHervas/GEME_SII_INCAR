@@ -34,13 +34,16 @@ package body ada_main is
    E167 : Short_Integer; pragma Import (Ada, E167, "ada__calendar_E");
    E094 : Short_Integer; pragma Import (Ada, E094, "ada__text_io_E");
    E165 : Short_Integer; pragma Import (Ada, E165, "system__random_seed_E");
-   E179 : Short_Integer; pragma Import (Ada, E179, "gestionarraytemp_E");
    E176 : Short_Integer; pragma Import (Ada, E176, "calc_temp_media_E");
+<<<<<<< HEAD
+   E179 : Short_Integer; pragma Import (Ada, E179, "gestionarraytemp_E");
+=======
 <<<<<<< HEAD
    E179 : Short_Integer; pragma Import (Ada, E179, "porc_temp_umbral_E");
    E181 : Short_Integer; pragma Import (Ada, E181, "rellenararraytemp_E");
    E183 : Short_Integer; pragma Import (Ada, E183, "utilidades_E");
 =======
+>>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
    E181 : Short_Integer; pragma Import (Ada, E181, "porc_temp_umbral_E");
 >>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
 
@@ -227,8 +230,8 @@ package body ada_main is
       E094 := E094 + 1;
       System.Random_Seed'Elab_Body;
       E165 := E165 + 1;
-      E179 := E179 + 1;
       E176 := E176 + 1;
+      E179 := E179 + 1;
       porc_temp_umbral'elab_body;
       E181 := E181 + 1;
       utilidades'elab_body;
@@ -271,6 +274,8 @@ package body ada_main is
 
 --  BEGIN Object file/option list
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\tipos_nuevos.o
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\calc_temp_media.o
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\porc_temp_umbral.o
@@ -282,8 +287,10 @@ package body ada_main is
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
 =======
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
+>>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\tipos_nuevos.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\calc_temp_media.o
+   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\porc_temp_umbral.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.o
    --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\

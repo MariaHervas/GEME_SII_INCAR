@@ -1,6 +1,8 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
+with Tipos_nuevos; use Tipos_nuevos;
+
 
 package body gestionArrayTemp is
   

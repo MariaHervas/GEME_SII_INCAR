@@ -28,6 +28,7 @@ procedure Main is
 
    ---------TIPOS------------
 
+
    --------------------------
 
    --------FUNCIONES---------
@@ -62,14 +63,17 @@ procedure Main is
 
    end calentar;
 
-
    ------------------------------------------
+
+
+
 
 
 
    lenArray : Integer := 0;
    temperatura_actual : T_temp;
    opcion : Character;
+
 
 begin
 
