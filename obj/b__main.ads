@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#10161859#;
+   u00001 : constant Version_32 := 16#c53d54e2#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -402,10 +402,14 @@ package ada_main is
    pragma Export (C, u00180, "rellenararraytempB");
    u00181 : constant Version_32 := 16#76e52a83#;
    pragma Export (C, u00181, "rellenararraytempS");
-   u00182 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00182, "system__memoryB");
-   u00183 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00183, "system__memoryS");
+   u00182 : constant Version_32 := 16#d4cbd257#;
+   pragma Export (C, u00182, "utilidadesB");
+   u00183 : constant Version_32 := 16#f3eb537c#;
+   pragma Export (C, u00183, "utilidadesS");
+   u00184 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00184, "system__memoryB");
+   u00185 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00185, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -590,6 +594,8 @@ package ada_main is
    --  porc_temp_umbral%b
    --  rellenararraytemp%s
    --  rellenararraytemp%b
+   --  utilidades%s
+   --  utilidades%b
    --  main%b
    --  END ELABORATION ORDER
 

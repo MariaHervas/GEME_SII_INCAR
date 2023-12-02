@@ -37,6 +37,7 @@ package body ada_main is
    E176 : Short_Integer; pragma Import (Ada, E176, "calc_temp_media_E");
    E179 : Short_Integer; pragma Import (Ada, E179, "porc_temp_umbral_E");
    E181 : Short_Integer; pragma Import (Ada, E181, "rellenararraytemp_E");
+   E183 : Short_Integer; pragma Import (Ada, E183, "utilidades_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -225,6 +226,8 @@ package body ada_main is
       porc_temp_umbral'elab_body;
       E179 := E179 + 1;
       E181 := E181 + 1;
+      utilidades'elab_body;
+      E183 := E183 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -266,6 +269,7 @@ package body ada_main is
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\calc_temp_media.o
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\porc_temp_umbral.o
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\rellenararraytemp.o
+   --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\utilidades.o
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\main.o
    --   -LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
    --   -LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
