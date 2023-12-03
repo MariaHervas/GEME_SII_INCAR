@@ -10,7 +10,7 @@ package Calc_temp_media is --sin variables in out??
 
    --variables internas del proceso
    -- Variables internas del proceso
-   Temp_Media: Float;
+   Temp_Media: Float:= 0.0;
    Kont: Integer := 0;
    --type T_Array is array (1..5) of Float;
    Tot : Float:= 0.0;

@@ -11,7 +11,9 @@ package body Calc_temp_media is --el array no se pone, no???
    procedure Calcular_Temp_media (arrayTemp: in  TipoArrayTemp; lenArray: in Integer) is
   
   
- begin
+   begin
+      Temp_Media:= 0.0;
+      Tot:= 0.0;
    for I in 1..lenArray loop
          Tot := Tot + ArrayTemp(I);   
    end loop;

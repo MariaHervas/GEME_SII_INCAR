@@ -8,7 +8,8 @@ package body porc_temp_umbral is
    procedure Porcentaje_Dentro_Del_Umbral (ArrayTemp: in TipoArrayTemp; LenArray: in integer) is
       
    begin
-      
+      Porcentaje := 0.0;
+      Tot := 0;
       Put_Line("Escribe un valor para el umbral entre 0 y 100 gracos centrigrados:");Skip_Line(1);
       Put_Line("primero introduce el valor mínimo del umbral y después el máximo:");
       Get(Umbral_Min);
@@ -40,7 +41,7 @@ package body porc_temp_umbral is
          end if;
       end loop;
       --porcentaje:
-      Porcentaje := ((Float(Kont) / Float( Tot)) * 100.0);
+   Porcentaje := ((Float(Kont) / Float( Tot)) * 100.0);
    Put_Line("el porcentaje de valores dentro del umbral escogido es del:");
 
    Put(Item => Porcentaje, Fore => 3, Aft => 2, Exp => 0); Put("porciento.");
