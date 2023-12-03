@@ -1,0 +1,33 @@
+porc_temp_umbral.adb:9:03: error: "arrayTemp" conflicts with declaration at porc_temp_umbral.ads:15
+porc_temp_umbral.adb:15:07: error: no candidate interpretations match the actuals:
+porc_temp_umbral.adb:15:07: error: missing argument for parameter "Item" in call to "get" declared at a-textio.ads:449
+porc_temp_umbral.adb:15:07: error: missing argument for parameter "Item" in call to "get" declared at a-textio.ads:376
+porc_temp_umbral.adb:15:11: error: expected type "Standard.String"
+porc_temp_umbral.adb:15:11: error: found type "Standard.Float"
+porc_temp_umbral.adb:15:11: error:   ==> in call to "Get" at a-textio.ads:452
+porc_temp_umbral.adb:15:11: error:   ==> in call to "Get" at a-textio.ads:379
+porc_temp_umbral.adb:16:07: error: no candidate interpretations match the actuals:
+porc_temp_umbral.adb:16:07: error: missing argument for parameter "Item" in call to "get" declared at a-textio.ads:449
+porc_temp_umbral.adb:16:07: error: missing argument for parameter "Item" in call to "get" declared at a-textio.ads:376
+porc_temp_umbral.adb:16:11: error: expected type "Standard.String"
+porc_temp_umbral.adb:16:11: error: found type "Standard.Float"
+porc_temp_umbral.adb:16:11: error:   ==> in call to "Get" at a-textio.ads:452
+porc_temp_umbral.adb:16:11: error:   ==> in call to "Get" at a-textio.ads:379
+porc_temp_umbral.adb:21:13: error: no candidate interpretations match the actuals:
+porc_temp_umbral.adb:21:13: error: missing argument for parameter "Item" in call to "get" declared at a-textio.ads:449
+porc_temp_umbral.adb:21:13: error: missing argument for parameter "Item" in call to "get" declared at a-textio.ads:376
+porc_temp_umbral.adb:21:17: error: expected type "Standard.String"
+porc_temp_umbral.adb:21:17: error: found type "Standard.Float"
+porc_temp_umbral.adb:21:17: error:   ==> in call to "Get" at a-textio.ads:452
+porc_temp_umbral.adb:21:17: error:   ==> in call to "Get" at a-textio.ads:379
+porc_temp_umbral.adb:24:13: error: no candidate interpretations match the actuals:
+porc_temp_umbral.adb:24:13: error: missing argument for parameter "Item" in call to "get" declared at a-textio.ads:449
+porc_temp_umbral.adb:24:13: error: missing argument for parameter "Item" in call to "get" declared at a-textio.ads:376
+porc_temp_umbral.adb:24:17: error: expected type "Standard.String"
+porc_temp_umbral.adb:24:17: error: found type "Standard.Float"
+porc_temp_umbral.adb:24:17: error:   ==> in call to "Get" at a-textio.ads:452
+porc_temp_umbral.adb:24:17: error:   ==> in call to "Get" at a-textio.ads:379
+porc_temp_umbral.adb:46:07: error: no candidate interpretations match the actuals:
+porc_temp_umbral.adb:46:07: error: missing argument for parameter "File" in call to "put" declared at a-textio.ads:457
+porc_temp_umbral.adb:46:07: error: missing argument for parameter "File" in call to "put" declared at a-textio.ads:384
+porc_temp_umbral.adb:46:31: error: unmatched actual "Fore" in call

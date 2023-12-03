@@ -9,14 +9,14 @@ RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U calc_temp_media%b	calc_temp_media.adb	04ca07ca NE OO PK
+U calc_temp_media%b	calc_temp_media.adb	57c50003 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W tipos_nuevos%s	tipos_nuevos.ads	tipos_nuevos.ali
 
-U calc_temp_media%s	calc_temp_media.ads	30820fa3 EE NE OO PK
+U calc_temp_media%s	calc_temp_media.ads	638d086a EE NE OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W tipos_nuevos%s	tipos_nuevos.ads	tipos_nuevos.ali
 
@@ -32,8 +32,8 @@ D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D calc_temp_media.ads	20231124132502 73b62219 calc_temp_media%s
-D calc_temp_media.adb	20231124132502 7b369aa4 calc_temp_media%b
+D calc_temp_media.ads	20231203171000 20b925d0 calc_temp_media%s
+D calc_temp_media.adb	20231202120346 7b369aa4 calc_temp_media%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D system.ads		20210520051136 2ffa5114 system%s
@@ -51,7 +51,7 @@ D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
-D tipos_nuevos.ads	20231124132502 43342dba tipos_nuevos%s
+D tipos_nuevos.ads	20231202120346 43342dba tipos_nuevos%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z s b [calcular_temp_media calc_temp_media 16 14 none]
@@ -71,13 +71,13 @@ X 11 a-tiflio.ads
 85i7 Aft{10|87I12} 14|26r39[3|20]
 86i7 Exp{10|87I12} 14|26r49[3|20]
 X 13 calc_temp_media.ads
-3K9*Calc_temp_media 10E4 17l5 17e20 14|9b14 30l5 30t20
-10f4 Tot{float} 14|14m4 17m7 17r14 22r18
-10f9 Temp_Media{float} 14|22m4 26r16
-11i4 Kont{integer} 14|18m7 18r15 22r30
-13a4 arrayTemp{32|6A9}
-14i4 lenArray{integer} 14|16r16
-16U14 Calcular_Temp_media 16>35 14|11b14 28l8 28t27
+3K9*Calc_temp_media 17l5 17e20 14|9b14 30l5 30t20
+10f4*Tot{float} 14|14m4 17m7 17r14 22r18
+10f9*Temp_Media{float} 14|22m4 26r16
+11i4*Kont{integer} 14|18m7 18r15 22r30
+13a4*arrayTemp{32|6A9}
+14i4*lenArray{integer} 14|16r16
+16U14*Calcular_Temp_media 16>35 14|11b14 28l8 28t27
 16a35 arrayTemp{32|6A9} 14|11b35 17r20
 X 14 calc_temp_media.adb
 16i8 I{integer} 17r30

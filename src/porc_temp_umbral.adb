@@ -1,10 +1,12 @@
 with Tipos_nuevos; use Tipos_nuevos;
-
+with Ada.Text_IO; use Ada.Text_IO;
 
 package body porc_temp_umbral is
    
    procedure Porcentaje_Dentro_Del_Umbral (ArrayTemp: in tipoArrayTemp) is
       
+  
+
    begin
       
       Put_Line("Escribe un valor para el umbral entre 0 y 100 gracos centrigrados:");Skip_Line(1);
@@ -40,5 +42,6 @@ package body porc_temp_umbral is
       --porcentaje:
       Porcentaje := ((Float(Kont) / Float( Tot)) * 100.0);
    Put_Line("el porcentaje de valores dentro del umbral escogido es del:");
-   Put(Item => Porcentaje, Fore => 3, Aft => 2, Exp => 0); Put("porciento.");
-   end Porcentaje_Dentro_Del_Umbral; 
+      Put(Item => Porcentaje, Fore => 3, Aft => 2, Exp => 0); Put("porciento.");
+      end Porcentaje_Dentro_Del_Umbral;
+   end porc_temp_umbral; 

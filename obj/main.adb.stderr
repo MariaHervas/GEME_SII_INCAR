@@ -1,1 +1,4 @@
-main.adb:86:10: error: "temperatura_actual" is undefined (more references follow)
+main.adb:99:43: error: "arrayTemp" is not visible (more references follow)
+main.adb:99:43: error: multiple use clauses cause hiding
+main.adb:99:43: error: hidden declaration at porc_temp_umbral.ads:14
+main.adb:99:43: error: hidden declaration at calc_temp_media.ads:13

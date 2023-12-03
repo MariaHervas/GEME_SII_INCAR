@@ -53,8 +53,8 @@ procedure Main is
       consigna_T_wat : T_wat;                                --que es la señal que se le mandará al GEME
       consigna_T_volt : T_volt;
    begin
-      Put("Introduzca los watios de consigna (50..350):");   --Buena idea crear una escepción que si no se introduce un valor
-      Get(consigna_T_wat);                                   --correcto vuelva a preguntar?
+      Put("Introduzca los watios de consigna (50..350):");
+      Get(consigna_T_wat);
       New_Line;
       consigna_T_volt := consigna_T_wat/80.0;
 
@@ -63,77 +63,6 @@ procedure Main is
 
    end calentar;
 
-<<<<<<< HEAD
-
-
-
-<<<<<<< HEAD
-=======
-
-      eleccion : Natural range 0..7;
-      temperatura_actual : T_temp;
-      arrayTemp: tipoArrayTemp;
-      lenArray : Integer := 0;
-
-   begin
-
-      Put_Line("----------- MENU OPCIONES -----------");
-      Put_Line("1: Calentar");
-      Put_Line("2: Mostrar temperatura actual");
-      Put_Line("3: Leer temperatura y guardar en array");
-      Put_Line("4: Mostrar temperaturas del array");
-      Put_Line("5: Calcular y mostrar temperatura media");
-      Put_Line("6: Calcular y mostrar porcentaje temperaturas > umbral");
-      Put_Line("7: Función extra");--FALTA POR DEFINIR ---
-      Put_Line("0: Salir");
-
-      Put("   Pulsa el número de la opción: ");
-      get(eleccion);
-      New_Line;
-
-   -- while Eleccion != 0 loop igual es mejor poner así el loop, pero funciona bien igual
-      case eleccion is
-         when 0=>
-            Put_Line("Opción: Salir");
-         when 1=>
-            Put_Line("Opción: Calentar");
-            calentar;
-         when 2=>
-            Put_Line("Opción: Mostrar temperatura actual");
-            temperatura_actual := leer_temperatura;
-            Put("La temperatura actual es: ");
-            Put(item=>temperatura_actual, Fore => 2, Aft => 2, Exp => 0);
-            Put(" grados"); New_Line; New_Line;
-         when 3=>
-            Put_Line("Opción: Leer temperatura y guardar en array");
-            temperatura_actual := leer_temperatura;
-            rellenarArray(temperatura_actual, arrayTemp, lenArray);
-            mostrarArray(arrayTemp, lenArray);
-            Put_Line("Longitud array: " & Integer'Image(lenArray));
-
-         when 4=>
-            Put_Line("Opción: Mostrar temperaturas del array");
-            mostrarArray(arrayTemp, lenArray);
-         when 5=>
-         Put_Line("Opción: Calcular y mostrar temperatura media");
-         Calcular_Temp_Media(arrayTemp);
-         when 6=>
-         Put_Line("Opción: Calcular y mostrar porcentaje de temperaturas dentro de un umbral");
-         Porcentaje_Dentro_Del_Umbral(arrayTemp);
-         when 7=>
-         Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
-         when others =>
-         Put_Line("No es una opción válida.");
-   end case;
-   --end loop
-      if eleccion = 0 then
-         return True;
-      else
-         return False;
-      end if;
-
-
-   end menu;
 
    ------------------------------------------
 
@@ -166,15 +95,20 @@ begin
          Put(item=>temperatura_actual, Fore => 2, Aft => 2, Exp => 0);
          Put(" grados"); New_Line; New_Line;
       when '3'=>
-         Put_Line("Opción: Leer temperatura y guardar en array");
-         --rellenarArray(valorTemp, arrayTemp, lenArray);
+         temperatura_actual := leer_temperatura;
+         rellenarArray(temperatura_actual,arrayTemp, lenArray);
+         mostrarArray(arrayTemp, lenArray);
+         Put_Line("Longitud array: " & Integer'Image(lenArray));
+
       when '4'=>
          Put_Line("Opción: Mostrar temperaturas del array");
-         --mostrarArray();
+         mostrarArray(arrayTemp, lenArray);
       when '5'=>
          Put_Line("Opción: Calcular y mostrar temperatura media");
+         Calcular_Temp_Media(arrayTemp);
       when '6'=>
          Put_Line("Opción: Calcular y mostrar porcentaje temperaturas > umbral");
+         Porcentaje_Dentro_Del_Umbral(arrayTemp);
       when '7'=>
          Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
       when 'f' =>
@@ -183,4 +117,5 @@ begin
          null;
       end case;
    end loop;
+
 end Main;
