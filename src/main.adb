@@ -53,8 +53,8 @@ procedure Main is
       consigna_T_wat : T_wat;                                --que es la señal que se le mandará al GEME
       consigna_T_volt : T_volt;
    begin
-      Put("Introduzca los watios de consigna (50..350):");   --Buena idea crear una escepción que si no se introduce un valor
-      Get(consigna_T_wat);                                   --correcto vuelva a preguntar?
+      Put("Introduzca los watios de consigna (50..350):");
+      Get(consigna_T_wat);
       New_Line;
       consigna_T_volt := consigna_T_wat/80.0;
 

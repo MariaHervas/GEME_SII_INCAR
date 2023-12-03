@@ -1,4 +1,0 @@
-testpackrellenararray.adb:13:15: error: "tipoArrayTemp" is not visible
-testpackrellenararray.adb:13:15: error: multiple use clauses cause hiding
-testpackrellenararray.adb:13:15: error: hidden declaration at gestionarraytemp.ads:5
-testpackrellenararray.adb:13:15: error: hidden declaration at tipos_nuevos.ads:6

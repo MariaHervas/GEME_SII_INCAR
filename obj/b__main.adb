@@ -35,17 +35,9 @@ package body ada_main is
    E094 : Short_Integer; pragma Import (Ada, E094, "ada__text_io_E");
    E165 : Short_Integer; pragma Import (Ada, E165, "system__random_seed_E");
    E176 : Short_Integer; pragma Import (Ada, E176, "calc_temp_media_E");
-<<<<<<< HEAD
    E179 : Short_Integer; pragma Import (Ada, E179, "gestionarraytemp_E");
-=======
-<<<<<<< HEAD
-   E179 : Short_Integer; pragma Import (Ada, E179, "porc_temp_umbral_E");
-   E181 : Short_Integer; pragma Import (Ada, E181, "rellenararraytemp_E");
-   E183 : Short_Integer; pragma Import (Ada, E183, "utilidades_E");
-=======
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
    E181 : Short_Integer; pragma Import (Ada, E181, "porc_temp_umbral_E");
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
+   E183 : Short_Integer; pragma Import (Ada, E183, "utilidades_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -273,30 +265,15 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\tipos_nuevos.o
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\calc_temp_media.o
+   --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\gestionarraytemp.o
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\porc_temp_umbral.o
-   --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\rellenararraytemp.o
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\utilidades.o
    --   C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\main.o
    --   -LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
    --   -LC:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
-=======
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\tipos_nuevos.o
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\calc_temp_media.o
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\porc_temp_umbral.o
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.o
-   --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
-   --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
-   --   -LC:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
    --   -static
    --   -lgnat
    --   -Wl,--stack=0x2000000
