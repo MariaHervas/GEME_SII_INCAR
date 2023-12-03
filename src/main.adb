@@ -91,10 +91,10 @@ procedure Main is
       get(eleccion);
       New_Line;
 
+   -- while Eleccion != 0 loop igual es mejor poner así el loop, pero funciona bien igual
       case eleccion is
          when 0=>
             Put_Line("Opción: Salir");
-
          when 1=>
             Put_Line("Opción: Calentar");
             calentar;
@@ -117,23 +117,15 @@ procedure Main is
          when 5=>
          Put_Line("Opción: Calcular y mostrar temperatura media");
          Calcular_Temp_Media(arrayTemp);
-<<<<<<< HEAD
          when 6=>
          Put_Line("Opción: Calcular y mostrar porcentaje de temperaturas dentro de un umbral");
          Porcentaje_Dentro_Del_Umbral(arrayTemp);
          when 7=>
-=======
-
-         when 6=>
-            Put_Line("Opción: Calcular y mostrar porcentaje temperaturas > umbral");
-         when 7=>
->>>>>>> 66592ed8984e395879e65d3934d127733a8160ac
-            Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
+         Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
          when others =>
-            Put_Line("No es una opción válida.");
-      end case;
-
-
+         Put_Line("No es una opción válida.");
+   end case;
+   --end loop
       if eleccion = 0 then
          return True;
       else
@@ -142,9 +134,7 @@ procedure Main is
 
 
    end menu;
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
-=======
->>>>>>> 1a0aacb9775351f97c4b7217444082f62639128b
+
    ------------------------------------------
 
 
