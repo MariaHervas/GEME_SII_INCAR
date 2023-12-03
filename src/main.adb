@@ -63,6 +63,7 @@ procedure Main is
 
    end calentar;
 
+
    ------------------------------------------
 
 
@@ -94,15 +95,20 @@ begin
          Put(item=>temperatura_actual, Fore => 2, Aft => 2, Exp => 0);
          Put(" grados"); New_Line; New_Line;
       when '3'=>
-         Put_Line("Opción: Leer temperatura y guardar en array");
-         --rellenarArray(valorTemp, arrayTemp, lenArray);
+         temperatura_actual := leer_temperatura;
+         rellenarArray(temperatura_actual, arrayTemp, lenArray);
+         mostrarArray(arrayTemp, lenArray);
+         Put_Line("Longitud array: " & Integer'Image(lenArray));
+
       when '4'=>
          Put_Line("Opción: Mostrar temperaturas del array");
-         --mostrarArray();
+         mostrarArray(arrayTemp, lenArray);
       when '5'=>
          Put_Line("Opción: Calcular y mostrar temperatura media");
+         Calcular_Temp_Media(arrayTemp);
       when '6'=>
          Put_Line("Opción: Calcular y mostrar porcentaje temperaturas > umbral");
+         Porcentaje_Dentro_Del_Umbral(arrayTemp);
       when '7'=>
          Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
       when 'f' =>
@@ -111,4 +117,5 @@ begin
          null;
       end case;
    end loop;
+
 end Main;

@@ -1,8 +1,7 @@
---librerías
-with Ada.Text_IO; use Ada.Text_IO;
-with Ada.Float_Text_IO; use Ada.Float_Text_IO;
-
 with Tipos_nuevos; use Tipos_nuevos;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
+with Ada.Text_IO; use Ada.Text_IO;
 
 
 package body porc_temp_umbral is
@@ -43,10 +42,8 @@ package body porc_temp_umbral is
       end loop;
       --porcentaje:
       Porcentaje := ((Float(Kont) / Float( Tot)) * 100.0);
-      Put_Line("el porcentaje de valores dentro del umbral escogido es del:");
-      Put(Item => Porcentaje, Fore => 3, Aft => 2, Exp => 0); Put("porciento.");
-   end Porcentaje_Dentro_Del_Umbral; 
-
-begin
-   null;
+   Put_Line("el porcentaje de valores dentro del umbral escogido es del:");
+   Put(Item => Porcentaje, Fore => 3, Aft => 2, Exp => 0); Put("porciento.");
+   end Porcentaje_Dentro_Del_Umbral;
 end porc_temp_umbral;
+
