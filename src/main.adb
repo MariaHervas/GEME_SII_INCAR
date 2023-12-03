@@ -8,14 +8,14 @@ with Ada.Numerics.Float_Random; use Ada.Numerics.Float_Random;
 with Tipos_nuevos; use Tipos_nuevos;
 with Calc_temp_media; use Calc_temp_media;
 with porc_temp_umbral; use porc_temp_umbral;
-<<<<<<< HEAD
-with rellenarArrayTemp; use rellenarArrayTemp;
+
+--with rellenarArrayTemp; use rellenarArrayTemp;
 with utilidades; use utilidades;
 --with mostrarArray; use mostrarArray;
-=======
+
 with gestionArrayTemp; use gestionArrayTemp;
 
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
+
 --------------------------------------------------------------
 --------------------------------------------------------------
 --------------------------------------------------------------
@@ -63,6 +63,7 @@ procedure Main is
 
    end calentar;
 
+<<<<<<< HEAD
 
 
 
@@ -114,11 +115,13 @@ procedure Main is
             Put_Line("Opción: Mostrar temperaturas del array");
             mostrarArray(arrayTemp, lenArray);
          when 5=>
-            Put_Line("Opción: Calcular y mostrar temperatura media");
+         Put_Line("Opción: Calcular y mostrar temperatura media");
+         Calcular_Temp_Media(arrayTemp);
 <<<<<<< HEAD
-         when 6=> Calcular_Temp_Media(arrayTemp);
-            Put_Line("Opción: Calcular y mostrar porcentaje de temperaturas dentro de un umbral");
-         when 7=> Porcentaje_Dentro_Del_Umbral(arrayTemp);
+         when 6=>
+         Put_Line("Opción: Calcular y mostrar porcentaje de temperaturas dentro de un umbral");
+         Porcentaje_Dentro_Del_Umbral(arrayTemp);
+         when 7=>
 =======
 
          when 6=>
@@ -140,17 +143,19 @@ procedure Main is
 
    end menu;
 >>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
+=======
+>>>>>>> 1a0aacb9775351f97c4b7217444082f62639128b
    ------------------------------------------
 
 
 
-<<<<<<< HEAD
-   terminar : Boolean;
-=======
+
+
+
    lenArray : Integer := 0;
    temperatura_actual : T_temp;
    opcion : Character;
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
+
 
 begin
 

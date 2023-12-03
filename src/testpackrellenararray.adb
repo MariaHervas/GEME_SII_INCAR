@@ -3,6 +3,7 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 
 with gestionArrayTemp; use gestionArrayTemp;
+with Tipos_nuevos; use Tipos_nuevos;
 
 
 procedure testPackRellenarArray is
