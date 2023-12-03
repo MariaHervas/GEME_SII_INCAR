@@ -54,7 +54,8 @@ package body gestionArrayTemp is
       
       for i in 1..lenArray loop
          
-         Put(T_temp'Image(arrayTemp(i))); 
+         Put(item=>arrayTemp(i), Fore => 2, Aft => 2, Exp => 0); 
+         Put("   ");
       end loop; 
       
       New_Line; 

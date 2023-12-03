@@ -12,7 +12,7 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		9f48cf53 NE OO SU
+U main%b		main.adb		712beee6 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -44,12 +44,12 @@ D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D calc_temp_media.ads	20231203171000 20b925d0 calc_temp_media%s
+D calc_temp_media.ads	20231203173522 68ffbfb9 calc_temp_media%s
 D gestionarraytemp.ads	20231202120346 7e76269a gestionarraytemp%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20231203170924 b3d105cd main%b
-D porc_temp_umbral.ads	20231203171304 bf54a0a2 porc_temp_umbral%s
+D main.adb		20231203173158 d72da970 main%b
+D porc_temp_umbral.ads	20231203172936 7d8db7c3 porc_temp_umbral%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
@@ -77,8 +77,8 @@ G c Z b b [main standard 26 11 none]
 G r c none [main standard 26 11 none] [menu utilidades 3 13 none]
 G r c none [main standard 26 11 none] [rellenararray gestionarraytemp 5 14 none]
 G r c none [main standard 26 11 none] [mostrararray gestionarraytemp 7 14 none]
-G r c none [main standard 26 11 none] [calcular_temp_media calc_temp_media 16 14 none]
-G r c none [main standard 26 11 none] [porcentaje_dentro_del_umbral porc_temp_umbral 15 14 none]
+G r c none [main standard 26 11 none] [calcular_temp_media calc_temp_media 8 14 none]
+G r c none [main standard 26 11 none] [porcentaje_dentro_del_umbral porc_temp_umbral 6 14 none]
 X 1 ada.ads
 16K9*Ada 20e8 21|1r6 1r24 2r6 2r23 3r6 3r31 4r6 4r29 5r6 5r37
 X 3 a-flteio.ads
@@ -107,9 +107,9 @@ X 14 a-tiflio.ads
 85i7 Aft{13|87I12} 21|95r51[3|20]
 86i7 Exp{13|87I12} 21|95r61[3|20]
 X 17 calc_temp_media.ads
-3K9*Calc_temp_media 17e20 21|9w6 9r27
-13a4*arrayTemp{42|6A9} 21|99m43 100r23 105r23 108r30 111r39
-16U14*Calcular_Temp_media 21|108s10
+3K9*Calc_temp_media 20e20 21|9w6 9r27
+4a4*arrayTemp{42|6A9} 21|99m44 100r23 105r23 108r30 111r39
+8U14*Calcular_Temp_media 21|108s10
 X 18 gestionarraytemp.ads
 3K9*gestionArrayTemp 9e21 21|16w6 16r28
 5U14*rellenarArray 21|99s10
@@ -123,12 +123,12 @@ X 21 main.adb
 51U14 calentar 51b14 64l8 64t16 90s10
 53f7 consigna_T_wat{42|4F12} 57m11 59r26
 54f7 consigna_T_volt{42|5F12} 59m7
-74i4 lenArray{integer} 99m54 99r54 100r34 101r54 105r34
+74i4 lenArray{integer} 99m55 99r55 100r34 101r54 105r34 108r41 111r50
 75f4 temperatura_actual{42|3F12} 93m10 95r20 98m10 99r24
 76e4 opcion{character} 82m7 84r12
 X 22 porc_temp_umbral.ads
-3K9*porc_temp_umbral 21|10w6 10r28 22|17e21
-15U14*Porcentaje_Dentro_Del_Umbral 21|111s10
+3K9*porc_temp_umbral 21|10w6 10r28 22|21e21
+6U14*Porcentaje_Dentro_Del_Umbral 21|111s10
 X 42 tipos_nuevos.ads
 1K9*Tipos_nuevos 21|8w6 8r24 42|8e17
 3F12*T_temp{float} 21|38r37 43r27 47r28 75r25

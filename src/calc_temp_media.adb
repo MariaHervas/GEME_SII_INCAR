@@ -8,18 +8,16 @@ with Tipos_nuevos; use Tipos_nuevos;
 
 package body Calc_temp_media is --el array no se pone, no???
    
-   procedure Calcular_Temp_media (arrayTemp: in  tipoArrayTemp) is
-   begin
+   procedure Calcular_Temp_media (arrayTemp: in  TipoArrayTemp; lenArray: in Integer) is
   
-   Tot := 0.0;
-
-   for I in 0..lenArray loop
-      Tot := Tot + arrayTemp(I);
-      Kont := Kont + 1;
+  
+ begin
+   for I in 1..lenArray loop
+         Tot := Tot + ArrayTemp(I);   
    end loop;
 
    -- Calcular temp. media:
-   Temp_Media := Tot / Float(Kont);
+   Temp_Media := Tot / Float(lenArray);
 
    -- Mostrar el valor de Temp_Media con dos decimales:
    Put("La temperatura media es: ");

@@ -40,15 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-<<<<<<< HEAD
-   u00001 : constant Version_32 := 16#4d22050b#;
-=======
-<<<<<<< HEAD
-   u00001 : constant Version_32 := 16#c53d54e2#;
-=======
-   u00001 : constant Version_32 := 16#093f889a#;
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
+   u00001 : constant Version_32 := 16#712beee6#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -396,58 +388,32 @@ package ada_main is
    pragma Export (C, u00173, "system__task_lockS");
    u00174 : constant Version_32 := 16#b8c476a4#;
    pragma Export (C, u00174, "system__win32__extS");
-   u00175 : constant Version_32 := 16#04ca07ca#;
+   u00175 : constant Version_32 := 16#0be73942#;
    pragma Export (C, u00175, "calc_temp_mediaB");
-   u00176 : constant Version_32 := 16#30820fa3#;
+   u00176 : constant Version_32 := 16#2bcb9203#;
    pragma Export (C, u00176, "calc_temp_mediaS");
    u00177 : constant Version_32 := 16#43342dba#;
    pragma Export (C, u00177, "tipos_nuevosS");
-<<<<<<< HEAD
-   u00178 : constant Version_32 := 16#9e56ac32#;
-=======
-<<<<<<< HEAD
-   u00178 : constant Version_32 := 16#bde8906d#;
-   pragma Export (C, u00178, "porc_temp_umbralB");
-   u00179 : constant Version_32 := 16#2421165a#;
-   pragma Export (C, u00179, "porc_temp_umbralS");
-   u00180 : constant Version_32 := 16#143d3ac8#;
-   pragma Export (C, u00180, "rellenararraytempB");
-   u00181 : constant Version_32 := 16#76e52a83#;
-   pragma Export (C, u00181, "rellenararraytempS");
-   u00182 : constant Version_32 := 16#d4cbd257#;
-   pragma Export (C, u00182, "utilidadesB");
-   u00183 : constant Version_32 := 16#f3eb537c#;
-   pragma Export (C, u00183, "utilidadesS");
-   u00184 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00184, "system__memoryB");
-   u00185 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00185, "system__memoryS");
-=======
-   u00178 : constant Version_32 := 16#71c80e31#;
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
+   u00178 : constant Version_32 := 16#c2ef70c6#;
    pragma Export (C, u00178, "gestionarraytempB");
    u00179 : constant Version_32 := 16#3d420b20#;
    pragma Export (C, u00179, "gestionarraytempS");
-   u00180 : constant Version_32 := 16#bde8906d#;
+   u00180 : constant Version_32 := 16#05cde1f5#;
    pragma Export (C, u00180, "porc_temp_umbralB");
-   u00181 : constant Version_32 := 16#2421165a#;
+   u00181 : constant Version_32 := 16#3eb99a79#;
    pragma Export (C, u00181, "porc_temp_umbralS");
-<<<<<<< HEAD
    u00182 : constant Version_32 := 16#fd83e873#;
    pragma Export (C, u00182, "system__concat_2B");
    u00183 : constant Version_32 := 16#2d5a86c4#;
    pragma Export (C, u00183, "system__concat_2S");
-   u00184 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00184, "system__memoryB");
-   u00185 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00185, "system__memoryS");
-=======
-   u00182 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00182, "system__memoryB");
-   u00183 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00183, "system__memoryS");
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
+   u00184 : constant Version_32 := 16#d4cbd257#;
+   pragma Export (C, u00184, "utilidadesB");
+   u00185 : constant Version_32 := 16#f3eb537c#;
+   pragma Export (C, u00185, "utilidadesS");
+   u00186 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00186, "system__memoryB");
+   u00187 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00187, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -634,13 +600,8 @@ package ada_main is
    --  gestionarraytemp%b
    --  porc_temp_umbral%s
    --  porc_temp_umbral%b
-<<<<<<< HEAD
-   --  rellenararraytemp%s
-   --  rellenararraytemp%b
    --  utilidades%s
    --  utilidades%b
-=======
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
    --  main%b
    --  END ELABORATION ORDER
 

@@ -96,7 +96,7 @@ begin
          Put(" grados"); New_Line; New_Line;
       when '3'=>
          temperatura_actual := leer_temperatura;
-         rellenarArray(temperatura_actual,arrayTemp, lenArray);
+         rellenarArray(temperatura_actual, arrayTemp, lenArray);
          mostrarArray(arrayTemp, lenArray);
          Put_Line("Longitud array: " & Integer'Image(lenArray));
 
@@ -105,10 +105,10 @@ begin
          mostrarArray(arrayTemp, lenArray);
       when '5'=>
          Put_Line("Opción: Calcular y mostrar temperatura media");
-         Calcular_Temp_Media(arrayTemp);
+         Calcular_Temp_Media(arrayTemp, lenArray);
       when '6'=>
          Put_Line("Opción: Calcular y mostrar porcentaje temperaturas > umbral");
-         Porcentaje_Dentro_Del_Umbral(arrayTemp);
+         Porcentaje_Dentro_Del_Umbral(arrayTemp, lenArray);
       when '7'=>
          Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
       when 'f' =>

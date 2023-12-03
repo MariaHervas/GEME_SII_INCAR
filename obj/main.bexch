@@ -1,49 +1,24 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-<<<<<<< HEAD
 C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr
-20231127110122 6291b5fbb6487d24f336be3746c42591
+20231202120346 66ebad679e379f02e3b6aa06503f1c31
 [BOUND OBJECT FILES]
+C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\tipos_nuevos.o
+C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\calc_temp_media.o
+C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\gestionarraytemp.o
+C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\porc_temp_umbral.o
+C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\utilidades.o
 C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\main.o
-=======
-C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr
-20231124132726 b996f538bcdef451dedd3df26549f32b
-[BOUND OBJECT FILES]
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\tipos_nuevos.o
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\calc_temp_media.o
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\porc_temp_umbral.o
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\rellenararraytemp.o
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\utilidades.o
-C:\Users\jonab\Desktop\jon\Unibertsitatea\Master\1. curso\Sistemas Informaticos Industriles\Proiectos\GEME\GEME_SII_INCAR\obj\main.o
-=======
-C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
->>>>>>> 35c075d349c60172c676f12c8be4e7964d56afbe
-C:\ejerciciosGNAT\GEME_SII_INCAR\obj\tipos_nuevos.o
-C:\ejerciciosGNAT\GEME_SII_INCAR\obj\calc_temp_media.o
-C:\ejerciciosGNAT\GEME_SII_INCAR\obj\gestionarraytemp.o
-C:\ejerciciosGNAT\GEME_SII_INCAR\obj\porc_temp_umbral.o
-C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.o
->>>>>>> 0ba6f3a3c030504333d38f4ba8272d1a35d49eef
->>>>>>> 66592ed8984e395879e65d3934d127733a8160ac
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
-<<<<<<< HEAD
 -LC:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\
 -LC:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\obj\
 -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
-=======
--LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
--LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
--LC:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
->>>>>>> 66592ed8984e395879e65d3934d127733a8160ac
 -static
 -static-libgcc
-C:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
 -Wl,--stack=0x2000000
