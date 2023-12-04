@@ -1,73 +1,65 @@
 <?xml version="1.0"?>
 <Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 18" line=" 106" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 2" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\gestionarraytemp.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 5" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\gestionarraytemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 17" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\testpackrellenararray.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\gestionarraytemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 13" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 4" line=" 3" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\maqueta.adb</vfs_file>
+    </file_marker>
+  </Project>
   <Project >
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\utilidades.adb</vfs_file>
+    <vfs_file >C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_file>
+    <file_marker column=" 18" line=" 106">
+      <vfs_project >C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file >C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\utilidades.ads</vfs_file>
+    <file_marker column=" 1" line=" 2">
+      <vfs_project >C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file >C:\ejerciciosGNAT\GEME_SII_INCAR\src\gestionarraytemp.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\tipos_nuevos.ads</vfs_file>
+    <file_marker column=" 1" line=" 5">
+      <vfs_project >C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file >C:\ejerciciosGNAT\GEME_SII_INCAR\src\gestionarraytemp.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\gestionarraytemp.adb</vfs_file>
+    <file_marker column=" 7" line=" 17">
+      <vfs_project >C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file >C:\ejerciciosGNAT\GEME_SII_INCAR\src\testpackrellenararray.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\gestionarraytemp.ads</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file >C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 9" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\porc_temp_umbral.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 43" line=" 99" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\calc_temp_media.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\calc_temp_media.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\calc_temp_media.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\calc_temp_media.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\calc_temp_media.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\porc_temp_umbral.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 9" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\porc_temp_umbral.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 9" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\porc_temp_umbral.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\calc_temp_media.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_project>
-      <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\src\calc_temp_media.ads</vfs_file>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file >C:\ejerciciosGNAT\GEME_SII_INCAR\src\gestionarraytemp.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

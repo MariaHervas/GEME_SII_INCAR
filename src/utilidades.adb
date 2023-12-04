@@ -17,7 +17,7 @@ package body utilidades is
          Put_Line("4: Mostrar temperaturas del array");
          Put_Line("5: Calcular y mostrar temperatura media");
          Put_Line("6: Calcular y mostrar porcentaje temperaturas > umbral");
-         Put_Line("7: Función extra");--FALTA POR DEFINIR ---
+         Put_Line("7: Graficar valores de temperatura actuales respecto a valores históricos");
          Put_Line("0: Salir");
 
          Put("   Pulsa el número de la opción: ");
@@ -27,8 +27,7 @@ package body utilidades is
          if eleccion >= 0 and eleccion <= 7 then
             exit;
          end if;
-         
-         Put_Line("No es una opción válida.");
+         Put_Line("Opción errónea");
                
       end loop;
       

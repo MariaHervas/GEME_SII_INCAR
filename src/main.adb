@@ -6,14 +6,10 @@ with Ada.Numerics.Float_Random; use Ada.Numerics.Float_Random;
 
 
 with Tipos_nuevos; use Tipos_nuevos;
-with Calc_temp_media; use Calc_temp_media;
-with porc_temp_umbral; use porc_temp_umbral;
 
---with rellenarArrayTemp; use rellenarArrayTemp;
 with utilidades; use utilidades;
---with mostrarArray; use mostrarArray;
-
-with gestionArrayTemp; use gestionArrayTemp;
+with manejoArray; use manejoArray;
+with maqueta; use maqueta;
 
 
 --------------------------------------------------------------
@@ -26,55 +22,12 @@ with gestionArrayTemp; use gestionArrayTemp;
 procedure Main is
 
 
-   ---------TIPOS------------
-
-
-   --------------------------
-
-   --------FUNCIONES---------
-
-
-
-   function leer_temperatura return T_temp is
-
-      G : Generator;
-      voltage_leido : Float;
-
-      temperatura_leida : T_temp;
-   begin
-      Reset(G);
-      voltage_leido := Random(G)*5.0;
-      temperatura_leida := T_temp(20.0*voltage_leido);
-      return temperatura_leida;
-   end leer_temperatura;
-
-   procedure calentar is                                     --En esta función introducimos la consigna de calentamiento deseada
-                                                             --en watios (T_wat) y se le hace una conversión a voltios (T_volt)
-      consigna_T_wat : T_wat;                                --que es la señal que se le mandará al GEME
-      consigna_T_volt : T_volt;
-   begin
-      Put("Introduzca los watios de consigna (50..350):");
-      Get(consigna_T_wat);
-      New_Line;
-      consigna_T_volt := consigna_T_wat/80.0;
-
-      --Aquí, en la prueba con GEME hay que mandar una señal de salida para que se ponga en marcha el calentador
-      --con el valor especificado
-
-   end calentar;
-
-
-   ------------------------------------------
-
-
-
-
-
-
    lenArray : Integer := 0;
    temperatura_actual : T_temp;
    opcion : Character;
-
+   arrayTemp: tipoArrayTemp;
+   maxHistorico: T_temp := 0.0;
+   minHistorico: T_temp := 100.0;
 
 begin
 
@@ -96,10 +49,7 @@ begin
          Put(" grados"); New_Line; New_Line;
       when '3'=>
          temperatura_actual := leer_temperatura;
-         rellenarArray(temperatura_actual, arrayTemp, lenArray);
-         mostrarArray(arrayTemp, lenArray);
-         Put_Line("Longitud array: " & Integer'Image(lenArray));
-
+         rellenarArray(temperatura_actual, arrayTemp, lenArray,maxHistorico,minHistorico);
       when '4'=>
          Put_Line("Opción: Mostrar temperaturas del array");
          mostrarArray(arrayTemp, lenArray);
@@ -110,9 +60,13 @@ begin
          Put_Line("Opción: Calcular y mostrar porcentaje temperaturas > umbral");
          Porcentaje_Dentro_Del_Umbral(arrayTemp, lenArray);
       when '7'=>
-         Put_Line("Opción: Función extra");--FALTA POR DEFINIR ---
+         Put_Line("Opción: Graficar valores de temperatura actuales respecto a valores históricos");
+
+         plotarray(arrayTemp, lenArray, minHistorico, maxHistorico);
+
       when 'f' =>
-         Put_Line("No es una opción válida");
+         null;
+
       when others =>
          null;
       end case;

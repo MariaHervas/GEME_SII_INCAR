@@ -5,40 +5,48 @@ A -march=x86-64
 P ZX
 
 RN
-RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
 RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
-RV NO_ELABORATION_CODE
 
-U utilidades%b		utilidades.adb		d86898a8 OO PK IL
+U maqueta%b		maqueta.adb		5a8586a7 NE OO PK IL
 W ada%s			ada.ads			ada.ali
-W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
-U utilidades%s		utilidades.ads		f3eb537c EE NE OO PK IL
+U maqueta%s		maqueta.ads		05dbfe82 EE NE OO PK IL
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W tipos_nuevos%s	tipos_nuevos.ads	tipos_nuevos.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
-D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-flteio.ads		20210520051128 e18a47a0 ada.float_text_io%s
 D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20210520051130 84bea7a3 ada.numerics%s
+D a-nuflra.ads		20210520051130 4056ab7a ada.numerics.float_random%s
 D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
 D a-string.ads		20210520051130 90ac6797 ada.strings%s
 D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
 D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
-D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D maqueta.ads		20231204105722 46efd338 maqueta%s
+D maqueta.adb		20231204105818 13426c28 maqueta%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-rannum.ads		20210520051134 c3978523 system.random_numbers%s
 D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
 D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
 D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
@@ -48,26 +56,42 @@ D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D tipos_nuevos.ads	20231124132502 43342dba tipos_nuevos%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
-D utilidades.ads	20231124142554 f3eb537c utilidades%s
-D utilidades.adb	20231204114254 733c971d utilidades%b
 G a e
-G c Z s b [menu utilidades 3 13 none]
+G c Z s b [leer_temperatura maqueta 5 13 none]
+G c Z s b [calentar maqueta 7 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 32|1r6 1r23 2r6 2r31
-X 3 a-inteio.ads
-18K13*Integer_Text_IO[11|46] 32|2w10 2r35
-X 10 a-textio.ads
-58K13*Text_IO 725e16 32|1w10 1r27
-262U14*New_Line 32|25s10
-463U14*Put 32|23s10
-506U14*Put_Line 32|13s10 14s10 15s10 16s10 17s10 18s10 19s10 20s10 21s10
-. 30s10
-X 11 a-tiinio.ads
-59U14*Get 32|24s10[3|18]
-X 31 utilidades.ads
-1K9*utilidades 5l5 5e15 32|5b14 60l5 60t15
-3V13*menu{character} 32|7b13 54l8 54t12
-X 32 utilidades.adb
-8i7 eleccion{natural} 24m14 27r13 27r31 34r12
+16K9*Ada 20e8 18|1r6 1r37 2r6 2r29 3r6 3r23
+X 3 a-flteio.ads
+20K13*Float_Text_IO[13|46] 18|2w10 2r33
+X 5 a-numeri.ads
+16K13*Numerics 35e17 18|1r10 1r41
+X 6 a-nuflra.ads
+41K22*Float_Random 74e30 18|1w19 1r50
+47R9*Generator<25|65R9> 18|9r11
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<25|73p13> 18|15s24
+53U14*Reset<25|103p14> 18|14s7
+X 12 a-textio.ads
+58K13*Text_IO 725e16 18|3w10 3r27
+262U14*New_Line 18|27s7
+463U14*Put 18|25s7
+X 13 a-tiflio.ads
+60U14*Get 18|26s7[3|20]
+X 17 maqueta.ads
+3K9*maqueta 9l5 9e12 18|5b14 36l5 36t12
+5V13*leer_temperatura{35|3F12} 18|7b14 18l8 18t24
+7U14*calentar 18|20b14 33l8 33t16
+X 18 maqueta.adb
+9r7 G{6|47R9} 14r13 15r31
+10f7 voltage_leido{float} 15m7 16r40
+12f7 temperatura_leida{35|3F12} 16m7 17r14
+22f7 consigna_T_wat{35|4F12} 26m11 28r26
+23f7 consigna_T_volt{35|5F12} 28m7
+X 35 tipos_nuevos.ads
+1K9*Tipos_nuevos 17|1w6 1r24 35|8e17
+3F12*T_temp{float} 17|5r37 18|7r38 12r27 16r28
+4F12*T_wat{float} 18|22r24
+5F12*T_volt{float} 18|23r25
 
