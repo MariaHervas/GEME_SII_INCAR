@@ -6,13 +6,14 @@ package body maqueta is
 
     function leer_temperatura return T_temp is
 
-      G : Generator;
+      --G : Generator;
       voltage_leido : Float;
 
       temperatura_leida : T_temp;
    begin
-      Reset(G);
-      voltage_leido := Random(G)*5.0;
+      --Reset(G);
+      -- voltage_leido := Random(G)*5.0;
+      voltage_leido := Adquirir;
       temperatura_leida := T_temp(20.0*voltage_leido);
       return temperatura_leida;
    end leer_temperatura;
@@ -29,6 +30,7 @@ package body maqueta is
 
       --Aquí, en la prueba con GEME hay que mandar una señal de salida para que se ponga en marcha el calentador
       --con el valor especificado
+      Write_ao_PCM3712(consigna_T_volt);
 
    end calentar;
 

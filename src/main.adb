@@ -6,17 +6,16 @@ with Ada.Numerics.Float_Random; use Ada.Numerics.Float_Random;
 
 
 with Tipos_nuevos; use Tipos_nuevos;
-
 with utilidades; use utilidades;
 with manejoArray; use manejoArray;
 with maqueta; use maqueta;
 
+with driver_pcm3712_ao_ehu; use driver_pcm3712_ao_ehu;
+with Driver_PCM3718_ai; use Driver_PCM3718_ai;
 
 --------------------------------------------------------------
 --------------------------------------------------------------
 --------------------------------------------------------------
-
-
 
 
 procedure Main is
@@ -31,12 +30,21 @@ procedure Main is
 
 begin
 
+   Configuracion_Inicial(Conexion => Differential_Ended,
+                         Canal_Primero => 0,
+                         Canal_Ultimo => 0,
+                         Disparo => Software,
+                         Numero_muestras => 1,
+                         Rango => Unipolar_5);
+   Initialize_PCM3712;
+
    loop
       opcion := menu;
 
       case opcion is
       when '0'=>
          Put_Line("Opción: Salir");
+         Fin_Adquisicion;
          exit;
       when '1'=>
          Put_Line("Opción: Calentar");
