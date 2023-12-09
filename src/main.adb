@@ -10,8 +10,8 @@ with utilidades; use utilidades;
 with manejoArray; use manejoArray;
 with maqueta; use maqueta;
 
-with driver_pcm3712_ao_ehu; use driver_pcm3712_ao_ehu;
-with Driver_PCM3718_ai; use Driver_PCM3718_ai;
+--with driver_pcm3712_ao_ehu; use driver_pcm3712_ao_ehu;
+--with Driver_PCM3718_ai; use Driver_PCM3718_ai;
 
 --------------------------------------------------------------
 --------------------------------------------------------------
@@ -30,13 +30,13 @@ procedure Main is
 
 begin
 
-   Configuracion_Inicial(Conexion => Differential_Ended,
-                         Canal_Primero => 0,
-                         Canal_Ultimo => 0,
-                         Disparo => Software,
-                         Numero_muestras => 1,
-                         Rango => Unipolar_5);
-   Initialize_PCM3712;
+--   Configuracion_Inicial(Conexion => Differential_Ended,
+--                         Canal_Primero => 0,
+--                         Canal_Ultimo => 0,
+--                         Disparo => Software,
+--                         Numero_muestras => 1,
+--                         Rango => Unipolar_5);
+--   Initialize_PCM3712;
 
    loop
       opcion := menu;
@@ -44,7 +44,7 @@ begin
       case opcion is
       when '0'=>
          Put_Line("Opción: Salir");
-         Fin_Adquisicion;
+         -- Fin_Adquisicion;
          exit;
       when '1'=>
          Put_Line("Opción: Calentar");
@@ -56,8 +56,7 @@ begin
          Put(item=>temperatura_actual, Fore => 2, Aft => 2, Exp => 0);
          Put(" grados"); New_Line; New_Line;
       when '3'=>
-         temperatura_actual := leer_temperatura;
-         rellenarArray(temperatura_actual, arrayTemp, lenArray,maxHistorico,minHistorico);
+         rellenarArray(arrayTemp, lenArray,maxHistorico,minHistorico);
       when '4'=>
          Put_Line("Opción: Mostrar temperaturas del array");
          mostrarArray(arrayTemp, lenArray);

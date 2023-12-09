@@ -2,7 +2,7 @@ with Tipos_nuevos; use Tipos_nuevos;
 
 package manejoArray is
 
-   procedure rellenarArray(valorTemp: T_temp; arrayTemp: out tipoArrayTemp; lenArray: in out Integer; maxHistorico, minHistorico: in out T_temp); 
+   procedure rellenarArray(arrayTemp: out tipoArrayTemp; lenArray: in out Integer; maxHistorico, minHistorico: in out T_temp); 
 
    procedure mostrarArray(arrayTemp: in tipoArrayTemp; lenArray: in Integer);
    
@@ -12,6 +12,8 @@ package manejoArray is
    
    
    procedure Porcentaje_Dentro_Del_Umbral (arrayTemp: in TipoArrayTemp; LenArray: in integer);
+   
+   function continuarRecogidaDatos return Boolean;
    
    private
    --variables internas, que van al .ads, deben ser PRIVADAS

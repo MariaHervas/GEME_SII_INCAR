@@ -3,8 +3,35 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 with Tipos_nuevos; use Tipos_nuevos;
 
+with maqueta; use maqueta;
+
+with Ada.Real_Time; use Ada.Real_Time; 
+
 package body manejoArray is
 
+      
+   function continuarRecogidaDatos return Boolean is 
+      
+      -- Función para preguntar al usuario si quiere recoger más datos
+      
+      resp: Character := 's'; 
+      continuar : Boolean := True; 
+      
+      
+   begin 
+         
+         Put_Line("¿Quiere recoger más datos de temperatura?");
+         Get(resp);
+         
+         if resp = 'n' or resp = 'N' then
+           continuar := False;          
+         end if; 
+               
+         delay 5.0; -- delay de 5 segundos
+         
+         return continuar;
+
+      end continuarRecogidaDatos; 
    
 procedure plotarray (arrayTemp : in tipoArraytemp; lenArray : in Integer; minHistorico, MaxHistorico: in T_temp ) is
 
@@ -59,12 +86,23 @@ procedure valoresHistoricos(valorTemp: T_temp; maxHistorico, minHistorico: in ou
         
    end valoresHistoricos; 
    
-procedure rellenarArray(valorTemp: T_temp; arrayTemp: out tipoArrayTemp; lenArray: in out Integer; maxHistorico, minHistorico: in out T_temp) is
+procedure rellenarArray(arrayTemp: out tipoArrayTemp; lenArray: in out Integer; maxHistorico, minHistorico: in out T_temp) is
       -- Esta función se llamará cada vez que se genere un nuevo valor de temperatura y lo almacenará en 
       -- la última posición ocupada de ese array. 
       
        
+      continuar : Boolean;
+      valorTemp : T_temp; 
+      
+      
    begin
+        
+      loop
+         
+         continuar := continuarRecogidaDatos; 
+         
+         valorTemp := leer_temperatura;
+      
       
       valoresHistoricos(valorTemp, maxHistorico, minHistorico);
               
@@ -79,8 +117,11 @@ procedure rellenarArray(valorTemp: T_temp; arrayTemp: out tipoArrayTemp; lenArra
          lenArray := 3;
          arrayTemp := arrayLLeno(arrayTemp, valorTemp); 
       
-      end if;   
-      
+         end if;   
+         
+         exit when continuar = False; 
+      end loop; 
+  
    end rellenarArray;
    
 
@@ -196,6 +237,10 @@ procedure rellenarArray(valorTemp: T_temp; arrayTemp: out tipoArrayTemp; lenArra
       
       New_Line;
    end Porcentaje_Dentro_Del_Umbral;
+   
+   
+   
+
    
    
 

@@ -38,8 +38,8 @@ D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D maqueta.ads		20231204105722 46efd338 maqueta%s
-D maqueta.adb		20231204105818 13426c28 maqueta%b
+D maqueta.ads		20231204120230 46efd338 maqueta%s
+D maqueta.adb		20231208101536 13426c28 maqueta%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -56,7 +56,7 @@ D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
-D tipos_nuevos.ads	20231124132502 43342dba tipos_nuevos%s
+D tipos_nuevos.ads	20231204120230 43342dba tipos_nuevos%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z s b [leer_temperatura maqueta 5 13 none]
@@ -75,23 +75,23 @@ X 6 a-nuflra.ads
 53U14*Reset<25|103p14> 18|14s7
 X 12 a-textio.ads
 58K13*Text_IO 725e16 18|3w10 3r27
-262U14*New_Line 18|27s7
-463U14*Put 18|25s7
+262U14*New_Line 18|28s7
+463U14*Put 18|26s7
 X 13 a-tiflio.ads
-60U14*Get 18|26s7[3|20]
+60U14*Get 18|27s7[3|20]
 X 17 maqueta.ads
-3K9*maqueta 9l5 9e12 18|5b14 36l5 36t12
-5V13*leer_temperatura{35|3F12} 18|7b14 18l8 18t24
-7U14*calentar 18|20b14 33l8 33t16
+3K9*maqueta 9l5 9e12 18|5b14 39l5 39t12
+5V13*leer_temperatura{35|3F12} 18|7b14 19l8 19t24
+7U14*calentar 18|21b14 36l8 36t16
 X 18 maqueta.adb
 9r7 G{6|47R9} 14r13 15r31
-10f7 voltage_leido{float} 15m7 16r40
-12f7 temperatura_leida{35|3F12} 16m7 17r14
-22f7 consigna_T_wat{35|4F12} 26m11 28r26
-23f7 consigna_T_volt{35|5F12} 28m7
+10f7 voltage_leido{float} 15m7 17r40
+12f7 temperatura_leida{35|3F12} 17m7 18r14
+23f7 consigna_T_wat{35|4F12} 27m11 29r26
+24f7 consigna_T_volt{35|5F12} 29m7
 X 35 tipos_nuevos.ads
 1K9*Tipos_nuevos 17|1w6 1r24 35|8e17
-3F12*T_temp{float} 17|5r37 18|7r38 12r27 16r28
-4F12*T_wat{float} 18|22r24
-5F12*T_volt{float} 18|23r25
+3F12*T_temp{float} 17|5r37 18|7r38 12r27 17r28
+4F12*T_wat{float} 18|23r24
+5F12*T_volt{float} 18|24r25
 
