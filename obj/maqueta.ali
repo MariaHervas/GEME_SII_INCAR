@@ -39,7 +39,7 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D maqueta.ads		20231204120230 46efd338 maqueta%s
-D maqueta.adb		20231208101536 13426c28 maqueta%b
+D maqueta.adb		20231209180626 13426c28 maqueta%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -80,9 +80,9 @@ X 12 a-textio.ads
 X 13 a-tiflio.ads
 60U14*Get 18|27s7[3|20]
 X 17 maqueta.ads
-3K9*maqueta 9l5 9e12 18|5b14 39l5 39t12
+3K9*maqueta 9l5 9e12 18|5b14 40l5 40t12
 5V13*leer_temperatura{35|3F12} 18|7b14 19l8 19t24
-7U14*calentar 18|21b14 36l8 36t16
+7U14*calentar 18|21b14 37l8 37t16
 X 18 maqueta.adb
 9r7 G{6|47R9} 14r13 15r31
 10f7 voltage_leido{float} 15m7 17r40
