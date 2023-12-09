@@ -24,10 +24,12 @@ package body manejoArray is
          Get(resp);
          
          if resp = 'n' or resp = 'N' then
-           continuar := False;          
-         end if; 
-               
+           continuar := False;           
+      
+      else               
          delay 5.0; -- delay de 5 segundos
+      end if;
+      
          
          return continuar;
 
@@ -97,6 +99,8 @@ procedure rellenarArray(arrayTemp: out tipoArrayTemp; lenArray: in out Integer; 
       
    begin
         
+      Put_Line("Valor de temperatura añadido");
+      
       loop
          
          continuar := continuarRecogidaDatos; 

@@ -13,7 +13,7 @@ RV NO_IO
 RV NO_RELATIVE_DELAY
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U manejoarray%b		manejoarray.adb		efcf8366 NE OO PK IL
+U manejoarray%b		manejoarray.adb		a77fe56c NE OO PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
@@ -25,7 +25,9 @@ W maqueta%s		maqueta.adb		maqueta.ali
 Z system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
 W tipos_nuevos%s	tipos_nuevos.ads	tipos_nuevos.ali
 
-U manejoarray%s		manejoarray.ads		94382caa EE NE OO PK IL
+U manejoarray%s		manejoarray.ads		a65e563d EE NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W tipos_nuevos%s	tipos_nuevos.ads	tipos_nuevos.ali
 
@@ -47,11 +49,11 @@ D a-tiflio.ads		20210520051130 fcca4daa ada.text_io.float_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
-D i-c.ads		20100527085632 809c38c4 interfaces.c%s
+D i-c.ads		20210520051132 d9beded9 interfaces.c%s
 D i-cstrin.ads		20210520051132 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D manejoarray.ads	20231208101432 d70c0110 manejoarray%s
-D manejoarray.adb	20231208102348 866d9bee manejoarray%b
+D manejoarray.ads	20231209120954 e72a87f4 manejoarray%s
+D manejoarray.adb	20231209121516 fefb7b00 manejoarray%b
 D maqueta.ads		20231204120230 46efd338 maqueta%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atacco.ads		20210520051132 4c36d12f system.address_to_access_conversions%s
@@ -82,104 +84,104 @@ D s-win32.ads		20210520051136 15ac53fb system.win32%s
 D tipos_nuevos.ads	20231204120230 43342dba tipos_nuevos%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z s b [rellenararray manejoarray 5 14 none]
-G c Z s b [mostrararray manejoarray 7 14 none]
-G c Z s b [plotarray manejoarray 9 14 none]
-G c Z s b [calcular_temp_media manejoarray 11 14 none]
-G c Z s b [porcentaje_dentro_del_umbral manejoarray 14 14 none]
-G c Z s b [continuarrecogidadatos manejoarray 16 13 none]
-G c Z s b [arraylleno manejoarray 21 13 none]
-G c Z s b [valoreshistoricos manejoarray 22 14 none]
-G r c none [rellenararray manejoarray 5 14 none] [leer_temperatura maqueta 5 13 none]
+G c Z s b [rellenararray manejoarray 6 14 none]
+G c Z s b [mostrararray manejoarray 8 14 none]
+G c Z s b [plotarray manejoarray 10 14 none]
+G c Z s b [calcular_temp_media manejoarray 12 14 none]
+G c Z s b [porcentaje_dentro_del_umbral manejoarray 15 14 none]
+G c Z s b [continuarrecogidadatos manejoarray 17 13 none]
+G c Z s b [arraylleno manejoarray 22 13 none]
+G c Z s b [valoreshistoricos manejoarray 23 14 none]
+G r c none [rellenararray manejoarray 6 14 none] [leer_temperatura maqueta 5 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 23|1r6 1r23 2r6 2r31 3r6 3r29 8r6 8r25
+16K9*Ada 20e8 22|2r6 2r25 23|1r6 1r23 2r6 2r31 3r6 3r29 8r6 8r25
 X 5 a-flteio.ads
 20K13*Float_Text_IO[15|46] 23|3w10 3r33
 X 6 a-inteio.ads
 18K13*Integer_Text_IO[16|46] 23|2w10 2r35
 X 8 a-reatim.ads
-39K13*Real_Time 185e18 23|8w10 8r29
+39K13*Real_Time 185e18 22|2w10 2r29 23|8w10 8r29
 X 14 a-textio.ads
 58K13*Text_IO 725e16 23|1w10 1r27
 87I12*Field{integer}
-262U14*New_Line 23|50s7 61s10 72s7 151s7 159s7 187s4 238s7
-271U14*Skip_Line 23|202s86 223s7
+262U14*New_Line 23|52s7 63s10 74s7 155s7 163s7 191s4 242s7
+271U14*Skip_Line 23|206s86 227s7
 379U14*Get 23|24s10
-463U14*Put 23|42s7 44s7 47s10 53s10 55s10 59s13 64s7 66s7 69s10 156s10 185s4
-506U14*Put_Line 23|23s10 41s7 63s7 150s7 202s7 203s7 209s13 212s13 222s7
-. 224s7 234s4 236s63
+463U14*Put 23|44s7 46s7 49s10 55s10 57s10 61s13 66s7 68s7 71s10 160s10 189s4
+506U14*Put_Line 23|23s10 43s7 65s7 102s7 154s7 206s7 207s7 213s13 216s13
+. 226s7 228s7 238s4 240s63
 X 15 a-tiflio.ads
-60U14*Get 23|204s7[5|20] 205s7[5|20] 210s13[5|20] 213s13[5|20]
-82U14*Put 23|43s7[5|20] 54s10[5|20] 65s7[5|20] 155s10[5|20] 186s4[5|20] 236s7[5|20]
-83f7 Item{float} 23|43r11[5|20] 54r14[5|20] 65r11[5|20] 155r14[5|20] 186r8[5|20]
-. 236r11[5|20]
-84i7 Fore{14|87I12} 23|43r31[5|20] 54r34[5|20] 65r31[5|20] 155r34[5|20] 186r28[5|20]
-. 236r31[5|20]
-85i7 Aft{14|87I12} 23|43r42[5|20] 54r45[5|20] 65r42[5|20] 155r45[5|20] 186r39[5|20]
-. 236r42[5|20]
-86i7 Exp{14|87I12} 23|43r52[5|20] 54r55[5|20] 65r52[5|20] 155r55[5|20] 186r49[5|20]
-. 236r52[5|20]
+60U14*Get 23|208s7[5|20] 209s7[5|20] 214s13[5|20] 217s13[5|20]
+82U14*Put 23|45s7[5|20] 56s10[5|20] 67s7[5|20] 159s10[5|20] 190s4[5|20] 240s7[5|20]
+83f7 Item{float} 23|45r11[5|20] 56r14[5|20] 67r11[5|20] 159r14[5|20] 190r8[5|20]
+. 240r11[5|20]
+84i7 Fore{14|87I12} 23|45r31[5|20] 56r34[5|20] 67r31[5|20] 159r34[5|20] 190r28[5|20]
+. 240r31[5|20]
+85i7 Aft{14|87I12} 23|45r42[5|20] 56r45[5|20] 67r42[5|20] 159r45[5|20] 190r39[5|20]
+. 240r42[5|20]
+86i7 Exp{14|87I12} 23|45r52[5|20] 56r55[5|20] 67r52[5|20] 159r55[5|20] 190r49[5|20]
+. 240r52[5|20]
 X 22 manejoarray.ads
-3K9*manejoArray 21E13 25l5 25e16 23|10b14 247l5 247t16
-5U14*rellenarArray 5<28 5=58 5=84 5=98 23|89b11 125l8 125t21
-5a28 arrayTemp{51|6A9} 23|89b25 109r21 112m10 115r24 118m10 118r34
-5i58 lenArray{integer} 23|89b55 109r10 111m10 111r22 112r20 115r13 117m10
-5f84 maxHistorico{51|3F12} 23|89b81 107m36
-5f98 minHistorico{51|3F12} 23|89b95 107m50
-7U14*mostrarArray 7>27 7>56 23|146b14 161l8 161t20
-7a27 arrayTemp{51|6A9} 23|146b27 155r20
-7i56 lenArray{integer} 23|146b56 153r19
-9U14*plotarray 9>25 9>55 9>78 9>92 23|36b11 73l8 73t17
-9a25 arrayTemp{51|6A9} 23|36b22 54r20 56r44
-9i55 lenArray{integer} 23|36b52 52r19
-9f78 minHistorico{51|3F12} 23|36b75 43r17 46r27
-9f92 MaxHistorico{51|3F12} 23|36b89 65r17 68r27
-11U14*Calcular_Temp_media 11>35 11>65 23|163b14 188l8 188t27
-11a35 arrayTemp{51|6A9} 23|163b35 178r23
-11i65 LenArray{integer} 23|163b65 177r16 182r30
-14U14*Porcentaje_Dentro_Del_Umbral 14>44 14>73 23|191b14 239l8 239t36
-14a44 arrayTemp{51|6A9} 23|191b44 228r13 228r44
-14i73 LenArray{integer} 23|191b73 226r19
-16V13*continuarRecogidaDatos{boolean} 23|13b13 34l11 34t33 102s23
-21V13 arrayLLeno{51|6A9} 21>24 21>50 23|118s23 130b13 144l8 144t18
-21a24 arrayTemp{51|6A9} 23|130b24 138r25 138r35 139r25 139r35
-21f50 valorTemp{51|3F12} 23|130b50 140r25
-22U14 valoresHistoricos 22>32 22=51 22=65 23|75b11 87l8 87t25 107s7
-22f32 valorTemp{51|3F12} 23|75b29 79r10 80r26 83r10 84r26
-22f51 maxHistorico{51|3F12} 23|75b48 79r22 80m10
-22f65 minHistorico{51|3F12} 23|75b62 83r22 84m10
+4K9*manejoArray 22E13 26l5 26e16 23|10b14 251l5 251t16
+6U14*rellenarArray 6<28 6=58 6=84 6=98 23|91b11 129l8 129t21
+6a28 arrayTemp{51|6A9} 23|91b25 113r21 116m10 119r24 122m10 122r34
+6i58 lenArray{integer} 23|91b55 113r10 115m10 115r22 116r20 119r13 121m10
+6f84 maxHistorico{51|3F12} 23|91b81 111m36
+6f98 minHistorico{51|3F12} 23|91b95 111m50
+8U14*mostrarArray 8>27 8>56 23|150b14 165l8 165t20
+8a27 arrayTemp{51|6A9} 23|150b27 159r20
+8i56 lenArray{integer} 23|150b56 157r19
+10U14*plotarray 10>25 10>55 10>78 10>92 23|38b11 75l8 75t17
+10a25 arrayTemp{51|6A9} 23|38b22 56r20 58r44
+10i55 lenArray{integer} 23|38b52 54r19
+10f78 minHistorico{51|3F12} 23|38b75 45r17 48r27
+10f92 MaxHistorico{51|3F12} 23|38b89 67r17 70r27
+12U14*Calcular_Temp_media 12>35 12>65 23|167b14 192l8 192t27
+12a35 arrayTemp{51|6A9} 23|167b35 182r23
+12i65 LenArray{integer} 23|167b65 181r16 186r30
+15U14*Porcentaje_Dentro_Del_Umbral 15>44 15>73 23|195b14 243l8 243t36
+15a44 arrayTemp{51|6A9} 23|195b44 232r13 232r44
+15i73 LenArray{integer} 23|195b73 230r19
+17V13*continuarRecogidaDatos{boolean} 23|13b13 36l11 36t33 106s23
+22V13 arrayLLeno{51|6A9} 22>24 22>50 23|122s23 134b13 148l8 148t18
+22a24 arrayTemp{51|6A9} 23|134b24 142r25 142r35 143r25 143r35
+22f50 valorTemp{51|3F12} 23|134b50 144r25
+23U14 valoresHistoricos 23>32 23=51 23=65 23|77b11 89l8 89t25 111s7
+23f32 valorTemp{51|3F12} 23|77b29 81r10 82r26 85r10 86r26
+23f51 maxHistorico{51|3F12} 23|77b48 81r22 82m10
+23f65 minHistorico{51|3F12} 23|77b62 85r22 86m10
 X 23 manejoarray.adb
 17e7 resp{character} 24m14 26r13 26r27
-18b7 continuar{boolean} 27m12 32r17
-38f7 tempRedondeada{float} 56m10 58r30
-46i11 i{integer}
-52i11 I{integer} 54r30 56r54
-58i14 J{integer}
-68i11 i{integer}
-94b7 continuar{boolean} 102m10 122r20
-95f7 valorTemp{51|3F12} 104m10 107r25 112r33 118r45
-134a7 arraySalida{51|6A9} 138m7 139m7 140m7 142r14
-153i11 i{integer} 155r30
-168f4 Temp_Media{float} 175m7 182m4 186r16
-169i4 Kont{integer}
-171f4 Tot{float} 176m7 178m10 178r17 182r18
-177i8 I{integer} 178r33
-195i4 Kont{integer} 219m7 229m13 229r20 233r26
-195i10 Tot{integer} 201m7 220m7 227m10 227r16 233r41
-196f4 Porcentaje{float} 200m7 233m4 236r19
-197f4 Umbral_Min{float} 204m11 207r13 208r13 210m17 228r29
-197f16 Umbral_Max{float} 205m11 207r33 211r16 213m17 228r60
-226i11 I{integer} 228r23 228r54
+18b7 continuar{boolean} 27m12 34r17
+40f7 tempRedondeada{float} 58m10 60r30
+48i11 i{integer}
+54i11 I{integer} 56r30 58r54
+60i14 J{integer}
+70i11 i{integer}
+96b7 continuar{boolean} 106m10 126r20
+97f7 valorTemp{51|3F12} 108m10 111r25 116r33 122r45
+138a7 arraySalida{51|6A9} 142m7 143m7 144m7 146r14
+157i11 i{integer} 159r30
+172f4 Temp_Media{float} 179m7 186m4 190r16
+173i4 Kont{integer}
+175f4 Tot{float} 180m7 182m10 182r17 186r18
+181i8 I{integer} 182r33
+199i4 Kont{integer} 223m7 233m13 233r20 237r26
+199i10 Tot{integer} 205m7 224m7 231m10 231r16 237r41
+200f4 Porcentaje{float} 204m7 237m4 240r19
+201f4 Umbral_Min{float} 208m11 211r13 212r13 214m17 232r29
+201f16 Umbral_Max{float} 209m11 211r33 215r16 217m17 232r60
+230i11 I{integer} 232r23 232r54
 X 24 maqueta.ads
 3K9*maqueta 23|6w6 6r19 24|9e12
-5V13*leer_temperatura{51|3F12} 23|104s23
+5V13*leer_temperatura{51|3F12} 23|108s23
 X 39 s-stausa.ads
 208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
 273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
 X 51 tipos_nuevos.ads
 1K9*Tipos_nuevos 22|1w6 1r24 23|4w6 4r24 51|8e17
-3F12*T_temp{float} 22|5r119 9r109 21r61 22r43 22r86 23|36r106 56r28 75r40
-. 75r83 89r116 95r19 130r61
-6A9*tipoArrayTemp(3F12)<integer> 22|5r43 7r41 9r40 11r50 14r58 21r35 21r76
-. 23|36r37 89r40 130r35 130r76 134r20 146r41 163r50 191r58
+3F12*T_temp{float} 22|6r119 10r109 22r61 23r43 23r86 23|38r106 58r28 77r40
+. 77r83 91r116 97r19 134r61
+6A9*tipoArrayTemp(3F12)<integer> 22|6r43 8r41 10r40 12r50 15r58 22r35 22r76
+. 23|38r37 91r40 134r35 134r76 138r20 150r41 167r50 195r58
 

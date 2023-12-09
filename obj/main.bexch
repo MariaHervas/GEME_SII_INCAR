@@ -1,22 +1,26 @@
-[MAPPING FILE]
-C:\Users\MARA~1\AppData\Local\Temp\GNAT-TEMP-000003.TMP
-[TOOLCHAIN VERSION]
-ada
-GNAT 2021
-[MAIN BASE NAME]
-main
-[COMPILER PATH]
-c:\gnat\2021_v1\bin\gcc.exe
-[COMPILER LEADING SWITCHES]
--c
--x
-ada
--gnatA
-[MAIN DEPENDENCY FILE]
-C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.ali
-[DEPENDENCY FILES]
-[BINDING OPTIONS]
-gnatbind_prefix=
+[GENERATED OBJECT FILE]
+b__main.o
 [PROJECT FILES]
 C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr
-20231208102522 6249fe21a94eb1bd874c460a10ed4382
+20231209121106 31cbf4698cebed798409b31ba288736d
+[BOUND OBJECT FILES]
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\tipos_nuevos.o
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\maqueta.o
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\manejoarray.o
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\utilidades.o
+C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
+-LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
+-LC:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnarl.a
+C:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#1c08f34e#;
+   u00001 : constant Version_32 := 16#c6f1a23d#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -388,24 +388,76 @@ package ada_main is
    pragma Export (C, u00173, "system__task_lockS");
    u00174 : constant Version_32 := 16#b8c476a4#;
    pragma Export (C, u00174, "system__win32__extS");
-   u00175 : constant Version_32 := 16#d7ad38b7#;
+   u00175 : constant Version_32 := 16#a77fe56c#;
    pragma Export (C, u00175, "manejoarrayB");
-   u00176 : constant Version_32 := 16#d332e947#;
+   u00176 : constant Version_32 := 16#a65e563d#;
    pragma Export (C, u00176, "manejoarrayS");
-   u00177 : constant Version_32 := 16#43342dba#;
-   pragma Export (C, u00177, "tipos_nuevosS");
-   u00178 : constant Version_32 := 16#5a8586a7#;
-   pragma Export (C, u00178, "maquetaB");
-   u00179 : constant Version_32 := 16#05dbfe82#;
-   pragma Export (C, u00179, "maquetaS");
-   u00180 : constant Version_32 := 16#d86898a8#;
-   pragma Export (C, u00180, "utilidadesB");
-   u00181 : constant Version_32 := 16#f3eb537c#;
-   pragma Export (C, u00181, "utilidadesS");
-   u00182 : constant Version_32 := 16#eca5ecae#;
-   pragma Export (C, u00182, "system__memoryB");
-   u00183 : constant Version_32 := 16#76873720#;
-   pragma Export (C, u00183, "system__memoryS");
+   u00177 : constant Version_32 := 16#ffaa9e94#;
+   pragma Export (C, u00177, "ada__calendar__delaysB");
+   u00178 : constant Version_32 := 16#d86d2f1d#;
+   pragma Export (C, u00178, "ada__calendar__delaysS");
+   u00179 : constant Version_32 := 16#91809229#;
+   pragma Export (C, u00179, "ada__real_timeB");
+   u00180 : constant Version_32 := 16#1ad7dfc0#;
+   pragma Export (C, u00180, "ada__real_timeS");
+   u00181 : constant Version_32 := 16#96c62183#;
+   pragma Export (C, u00181, "system__taskingB");
+   u00182 : constant Version_32 := 16#256a579d#;
+   pragma Export (C, u00182, "system__taskingS");
+   u00183 : constant Version_32 := 16#0c334715#;
+   pragma Export (C, u00183, "system__task_primitivesS");
+   u00184 : constant Version_32 := 16#4e3ebb7e#;
+   pragma Export (C, u00184, "system__os_interfaceS");
+   u00185 : constant Version_32 := 16#0039537b#;
+   pragma Export (C, u00185, "interfaces__c__stringsB");
+   u00186 : constant Version_32 := 16#eda3d306#;
+   pragma Export (C, u00186, "interfaces__c__stringsS");
+   u00187 : constant Version_32 := 16#cc709166#;
+   pragma Export (C, u00187, "system__task_primitives__operationsB");
+   u00188 : constant Version_32 := 16#9723968e#;
+   pragma Export (C, u00188, "system__task_primitives__operationsS");
+   u00189 : constant Version_32 := 16#6387a759#;
+   pragma Export (C, u00189, "system__interrupt_managementB");
+   u00190 : constant Version_32 := 16#26aedc33#;
+   pragma Export (C, u00190, "system__interrupt_managementS");
+   u00191 : constant Version_32 := 16#7bca5a8d#;
+   pragma Export (C, u00191, "system__multiprocessorsB");
+   u00192 : constant Version_32 := 16#1756ce67#;
+   pragma Export (C, u00192, "system__multiprocessorsS");
+   u00193 : constant Version_32 := 16#ce7dfb56#;
+   pragma Export (C, u00193, "system__task_infoB");
+   u00194 : constant Version_32 := 16#5a49699d#;
+   pragma Export (C, u00194, "system__task_infoS");
+   u00195 : constant Version_32 := 16#4ddebf0b#;
+   pragma Export (C, u00195, "system__tasking__debugB");
+   u00196 : constant Version_32 := 16#d3b35c55#;
+   pragma Export (C, u00196, "system__tasking__debugS");
+   u00197 : constant Version_32 := 16#fd83e873#;
+   pragma Export (C, u00197, "system__concat_2B");
+   u00198 : constant Version_32 := 16#2d5a86c4#;
+   pragma Export (C, u00198, "system__concat_2S");
+   u00199 : constant Version_32 := 16#2b70b149#;
+   pragma Export (C, u00199, "system__concat_3B");
+   u00200 : constant Version_32 := 16#248a0db1#;
+   pragma Export (C, u00200, "system__concat_3S");
+   u00201 : constant Version_32 := 16#617d5887#;
+   pragma Export (C, u00201, "system__stack_usageB");
+   u00202 : constant Version_32 := 16#8d63b971#;
+   pragma Export (C, u00202, "system__stack_usageS");
+   u00203 : constant Version_32 := 16#5a8586a7#;
+   pragma Export (C, u00203, "maquetaB");
+   u00204 : constant Version_32 := 16#05dbfe82#;
+   pragma Export (C, u00204, "maquetaS");
+   u00205 : constant Version_32 := 16#43342dba#;
+   pragma Export (C, u00205, "tipos_nuevosS");
+   u00206 : constant Version_32 := 16#d86898a8#;
+   pragma Export (C, u00206, "utilidadesB");
+   u00207 : constant Version_32 := 16#f3eb537c#;
+   pragma Export (C, u00207, "utilidadesS");
+   u00208 : constant Version_32 := 16#eca5ecae#;
+   pragma Export (C, u00208, "system__memoryB");
+   u00209 : constant Version_32 := 16#76873720#;
+   pragma Export (C, u00209, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -432,6 +484,8 @@ package ada_main is
    --  system.storage_elements%b
    --  system.stack_checking%s
    --  system.stack_checking%b
+   --  system.stack_usage%s
+   --  system.stack_usage%b
    --  system.string_hash%s
    --  system.string_hash%b
    --  system.htable%s
@@ -457,6 +511,10 @@ package ada_main is
    --  system.wch_jis%b
    --  system.wch_cnv%s
    --  system.wch_cnv%b
+   --  system.concat_2%s
+   --  system.concat_2%b
+   --  system.concat_3%s
+   --  system.concat_3%b
    --  system.exn_flt%s
    --  system.exn_lflt%s
    --  system.exn_llf%s
@@ -537,6 +595,8 @@ package ada_main is
    --  ada.strings.text_buffers%b
    --  ada.strings.text_buffers.utils%s
    --  ada.strings.text_buffers.utils%b
+   --  interfaces.c.strings%s
+   --  interfaces.c.strings%b
    --  system.arith_64%s
    --  system.arith_64%b
    --  system.fat_flt%s
@@ -545,6 +605,11 @@ package ada_main is
    --  system.img_flt%s
    --  system.img_lflt%s
    --  system.img_llf%s
+   --  system.multiprocessors%s
+   --  system.multiprocessors%b
+   --  system.os_interface%s
+   --  system.interrupt_management%s
+   --  system.interrupt_management%b
    --  system.put_images%s
    --  system.put_images%b
    --  ada.streams%s
@@ -555,8 +620,11 @@ package ada_main is
    --  ada.finalization%s
    --  system.file_io%s
    --  system.file_io%b
+   --  system.task_info%s
+   --  system.task_info%b
    --  system.task_lock%s
    --  system.task_lock%b
+   --  system.task_primitives%s
    --  system.val_flt%s
    --  system.val_lflt%s
    --  system.val_llf%s
@@ -567,8 +635,18 @@ package ada_main is
    --  system.win32.ext%s
    --  system.os_primitives%s
    --  system.os_primitives%b
+   --  system.tasking%s
+   --  system.task_primitives.operations%s
+   --  system.tasking.debug%s
+   --  system.tasking.debug%b
+   --  system.task_primitives.operations%b
+   --  system.tasking%b
    --  ada.calendar%s
    --  ada.calendar%b
+   --  ada.calendar.delays%s
+   --  ada.calendar.delays%b
+   --  ada.real_time%s
+   --  ada.real_time%b
    --  ada.text_io%s
    --  ada.text_io%b
    --  ada.text_io.generic_aux%s
@@ -584,10 +662,10 @@ package ada_main is
    --  ada.numerics.float_random%s
    --  ada.numerics.float_random%b
    --  tipos_nuevos%s
-   --  manejoarray%s
-   --  manejoarray%b
    --  maqueta%s
    --  maqueta%b
+   --  manejoarray%s
+   --  manejoarray%b
    --  utilidades%s
    --  utilidades%b
    --  main%b

@@ -1,4 +1,5 @@
 with Tipos_nuevos; use Tipos_nuevos;
+with Ada.Real_Time; use Ada.Real_Time; 
 
 package manejoArray is
 

@@ -26,17 +26,21 @@ package body ada_main is
    E100 : Short_Integer; pragma Import (Ada, E100, "ada__strings__utf_encoding_E");
    E106 : Short_Integer; pragma Import (Ada, E106, "ada__tags_E");
    E098 : Short_Integer; pragma Import (Ada, E098, "ada__strings__text_buffers_E");
+   E186 : Short_Integer; pragma Import (Ada, E186, "interfaces__c__strings_E");
    E096 : Short_Integer; pragma Import (Ada, E096, "ada__streams_E");
    E122 : Short_Integer; pragma Import (Ada, E122, "system__file_control_block_E");
    E121 : Short_Integer; pragma Import (Ada, E121, "system__finalization_root_E");
    E119 : Short_Integer; pragma Import (Ada, E119, "ada__finalization_E");
    E118 : Short_Integer; pragma Import (Ada, E118, "system__file_io_E");
+   E194 : Short_Integer; pragma Import (Ada, E194, "system__task_info_E");
    E167 : Short_Integer; pragma Import (Ada, E167, "ada__calendar_E");
+   E178 : Short_Integer; pragma Import (Ada, E178, "ada__calendar__delays_E");
+   E180 : Short_Integer; pragma Import (Ada, E180, "ada__real_time_E");
    E094 : Short_Integer; pragma Import (Ada, E094, "ada__text_io_E");
    E165 : Short_Integer; pragma Import (Ada, E165, "system__random_seed_E");
+   E204 : Short_Integer; pragma Import (Ada, E204, "maqueta_E");
    E176 : Short_Integer; pragma Import (Ada, E176, "manejoarray_E");
-   E179 : Short_Integer; pragma Import (Ada, E179, "maqueta_E");
-   E181 : Short_Integer; pragma Import (Ada, E181, "utilidades_E");
+   E207 : Short_Integer; pragma Import (Ada, E207, "utilidades_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -202,6 +206,8 @@ package body ada_main is
       Ada.Strings.Text_Buffers'Elab_Spec;
       Ada.Strings.Text_Buffers'Elab_Body;
       E098 := E098 + 1;
+      Interfaces.C.Strings'Elab_Spec;
+      E186 := E186 + 1;
       Ada.Streams'Elab_Spec;
       E096 := E096 + 1;
       System.File_Control_Block'Elab_Spec;
@@ -213,18 +219,25 @@ package body ada_main is
       E119 := E119 + 1;
       System.File_Io'Elab_Body;
       E118 := E118 + 1;
+      System.Task_Info'Elab_Spec;
+      E194 := E194 + 1;
       Ada.Calendar'Elab_Spec;
       Ada.Calendar'Elab_Body;
       E167 := E167 + 1;
+      Ada.Calendar.Delays'Elab_Body;
+      E178 := E178 + 1;
+      Ada.Real_Time'Elab_Spec;
+      Ada.Real_Time'Elab_Body;
+      E180 := E180 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E094 := E094 + 1;
       System.Random_Seed'Elab_Body;
       E165 := E165 + 1;
+      E204 := E204 + 1;
       E176 := E176 + 1;
-      E179 := E179 + 1;
       utilidades'elab_body;
-      E181 := E181 + 1;
+      E207 := E207 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -263,15 +276,19 @@ package body ada_main is
 
 --  BEGIN Object file/option list
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\tipos_nuevos.o
-   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\manejoarray.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\maqueta.o
+   --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\manejoarray.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\utilidades.o
    --   C:\ejerciciosGNAT\GEME_SII_INCAR\obj\main.o
    --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
    --   -LC:\ejerciciosGNAT\GEME_SII_INCAR\obj\
    --   -LC:/gnat/2021_v1/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
+   --   -lgnarl
    --   -lgnat
+   --   -Xlinker
+   --   --stack=0x200000,0x1000
+   --   -mthreads
    --   -Wl,--stack=0x2000000
 --  END Object file/option list   
 
