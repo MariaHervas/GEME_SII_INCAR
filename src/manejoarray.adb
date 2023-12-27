@@ -247,12 +247,6 @@ procedure rellenarArray(arrayTemp: out tipoArrayTemp; lenArray: in out Integer; 
       Put(Item => Porcentaje, Fore => 3, Aft => 2, Exp => 0); Put_Line(" %."); 
       
       New_Line;
-   end Porcentaje_Dentro_Del_Umbral;
-   
-   
-   
-
-   
-   
+   end Porcentaje_Dentro_Del_Umbral;     
 
 end manejoArray;

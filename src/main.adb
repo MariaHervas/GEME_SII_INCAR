@@ -40,37 +40,47 @@ begin
 
    loop
       opcion := menu;
-
+      -- La opción escogida será igual al valor devuelto por la función menú,
+      --La cual es de tipo char y será escogida por el usuario
       case opcion is
+      --En función de esta opción se realizará una acción u otra
       when '0'=>
          Put_Line("Opción: Salir");
          -- Fin_Adquisicion;
+         -- sale del programa
          exit;
       when '1'=>
          Put_Line("Opción: Calentar");
          calentar;
+         -- Calienta la maqueta
       when '2'=>
          Put_Line("Opción: Mostrar temperatura actual");
          temperatura_actual := leer_temperatura;
          Put("La temperatura actual es: ");
          Put(item=>temperatura_actual, Fore => 2, Aft => 2, Exp => 0);
          Put(" grados"); New_Line; New_Line;
+         -- Muestra la temperatura actual de la maqueta
       when '3'=>
          rellenarArray(arrayTemp, lenArray,maxHistorico,minHistorico);
+         -- Rellena el array de temperatura con un valor nuevo del instante.
       when '4'=>
          Put_Line("Opción: Mostrar temperaturas del array");
          mostrarArray(arrayTemp, lenArray);
+         -- Muestra todas la temperaturas que tiene el array hasta el momento
       when '5'=>
          Put_Line("Opción: Calcular y mostrar temperatura media");
          Calcular_Temp_Media(arrayTemp, lenArray);
+         -- Calcula la temperatura media con los valores del array almacenados hasta el momento
       when '6'=>
          Put_Line("Opción: Calcular y mostrar porcentaje temperaturas > umbral");
          Porcentaje_Dentro_Del_Umbral(arrayTemp, lenArray);
+         -- Calcula el porcentaje de temperaturas que existen dentro de un umbral
+         -- dado por el usuario
       when '7'=>
          Put_Line("Opción: Graficar valores de temperatura actuales respecto a valores históricos");
-
          plotarray(arrayTemp, lenArray, minHistorico, maxHistorico);
-
+         -- Grafica los valores históricos máximos y minimos así como los valores actuales de temperatura
+         -- Que contenga el array en ese determinado instante.
       when 'f' =>
          null;
 
