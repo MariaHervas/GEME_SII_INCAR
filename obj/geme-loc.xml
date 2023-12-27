@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
+<<<<<<< HEAD
   <Project>
     <vfs_file>C:\Users\Iker\Desktop\UPV\master INCAR\sis. informatica industrial\proyecto final\GEME_SII_INCAR\geme.gpr</vfs_file>
     <file_marker column=" 1" line=" 1" >
@@ -112,6 +113,28 @@
     <file_marker current="true" column=" 1" line=" 1">
       <vfs_project >C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
       <vfs_file >C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
+=======
+  <Project >
+    <file_marker column=" 1" line=" 20" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\maqueta.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\maqueta.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 13" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 30" >
+      <vfs_project>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_project>
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\src\manejoarray.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 10" line=" 7" >
+      <vfs_project />
+      <vfs_file>C:\ejerciciosGNAT\GEME_SII_INCAR\geme.gpr</vfs_file>
+>>>>>>> df300409f3ea06af33e26710caf670c48ae86279
     </file_marker>
   </Project>
 </Locations>

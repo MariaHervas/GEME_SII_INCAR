@@ -35,7 +35,11 @@ package body manejoArray is
 
       end continuarRecogidaDatos; 
    
-procedure plotarray (arrayTemp : in tipoArraytemp; lenArray : in Integer; minHistorico, MaxHistorico: in T_temp ) is
+   procedure plotarray (arrayTemp : in tipoArraytemp; lenArray : in Integer; minHistorico, MaxHistorico: in T_temp ) is
+      
+      -- Esta función corresponde a la funcionalidad extra.
+      -- Plotea los valores de temperatura mínima histórica, las almacenadas en el array de temperaturas y 
+      -- la máxima histórica. 
 
       tempRedondeada : Float;
    
@@ -55,6 +59,8 @@ procedure plotarray (arrayTemp : in tipoArraytemp; lenArray : in Integer; minHis
          Put("(");
          Put(item=>arrayTemp(I), Fore => 2, Aft => 2, Exp => 0);
          Put(") => ");
+         
+         -- se redondea la temperatura para poder ponder tantos asteriscos como grados centígrados corresponden
          tempRedondeada := T_temp'Rounding(arrayTemp(I));
          
          for J in 1..Integer(tempRedondeada) loop
@@ -74,8 +80,11 @@ procedure plotarray (arrayTemp : in tipoArraytemp; lenArray : in Integer; minHis
       New_Line;
    end plotarray;
    
+   
+   
 procedure valoresHistoricos(valorTemp: T_temp; maxHistorico, minHistorico: in out T_temp) is
-      
+      -- Esta función se llama con cada valor de temperatura medido para almacenarse en el array. 
+      -- Almacena dicho valor como máximo o mínimo histórico si corresponde. 
    begin
       
       if valorTemp > maxHistorico then 
@@ -87,6 +96,8 @@ procedure valoresHistoricos(valorTemp: T_temp; maxHistorico, minHistorico: in ou
       end if; 
         
    end valoresHistoricos; 
+   
+   
    
 procedure rellenarArray(arrayTemp: out tipoArrayTemp; lenArray: in out Integer; maxHistorico, minHistorico: in out T_temp) is
       -- Esta función se llamará cada vez que se genere un nuevo valor de temperatura y lo almacenará en 
@@ -103,26 +114,34 @@ procedure rellenarArray(arrayTemp: out tipoArrayTemp; lenArray: in out Integer; 
       
       loop
          
+         -- se llama a la función de consulta al usuario para continuar recogiendo valores
          continuar := continuarRecogidaDatos; 
          
+         -- se llama a la función que lee la temperatura de la maqueta
          valorTemp := leer_temperatura;
       
-      
+         -- se llama a la función de valores históricos para almacenarlo como máximo o mínimo
+         -- si corresponde
       valoresHistoricos(valorTemp, maxHistorico, minHistorico);
               
       if lenArray < arrayTemp'Length then 
          
+            -- si el array no está lleno, se almacena la temperatura y se incrementa la longitud
          lenArray := lenArray + 1;    
          arrayTemp(lenArray) := valorTemp; 
          
            
-      elsif lenArray = arrayTemp'Length then 
+         elsif lenArray = arrayTemp'Length then 
+            
+            -- si el array está lleno, su longitud pasa a ser 3 y se llama a la función que gestiona
+            -- el array lleno.
          
          lenArray := 3;
          arrayTemp := arrayLLeno(arrayTemp, valorTemp); 
       
          end if;   
          
+         -- se sale del bucle si el usuario responde que no quiere más valore de temperatura
          exit when continuar = False; 
       end loop; 
   
@@ -139,6 +158,8 @@ procedure rellenarArray(arrayTemp: out tipoArrayTemp; lenArray: in out Integer; 
       
    begin
       
+      -- los tres primeros valores del array de salida son los dos últimos valores del array de
+      -- temperaturas y el último valor de temperatura medido al llenarse el array. 
       arraySalida(1) := arrayTemp(arrayTemp'Last-1);
       arraySalida(2) := arrayTemp(arrayTemp'Last);
       arraySalida(3) := valorTemp;
@@ -148,6 +169,8 @@ procedure rellenarArray(arrayTemp: out tipoArrayTemp; lenArray: in out Integer; 
    end arrayLLeno; 
    
    procedure mostrarArray(arrayTemp: in tipoArrayTemp; lenArray: in Integer) is
+      -- Pocedimiento para mostrar el array de temperaturas
+      -- Hace tantas iteraciones como elementos hay en el array
       
    begin 
       

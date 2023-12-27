@@ -28,6 +28,7 @@ package body maqueta is
       New_Line;
       consigna_T_volt := consigna_T_wat/80.0;
 
+
       --Aquí, en la prueba con GEME hay que mandar una señal de salida para que se ponga en marcha el calentador
       --con el valor especificado
 
